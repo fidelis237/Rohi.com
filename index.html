@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rohi Bilingual Comprehensive High School | Loum &amp; Tombel, Cameroon</title>
+<meta name="description" content="Rohi Bilingual Comprehensive High School in Loum and Tombel, Cameroon. Science, Arts, Commercial and Technical departments. Enrol online and pay at the campus.">
+<meta name="theme-color" content="#087443">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rohi Bilingual Comprehensive High School">
+<meta property="og:description" content="Excellence, Discipline, Success. Science, Arts, Commercial and Technical departments in Loum and Tombel.">
+<meta property="og:image" content="images/hero-lab.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 8 12v20c0 14 10 24 24 28 14-4 24-14 24-28V12z' fill='%23087443'/%3E%3Ccircle cx='32' cy='30' r='9' fill='%23fff'/%3E%3C/svg%3E">
+
+<style>html,body{margin:0}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap">
+<style>
+/* Layout follows the client's reference: white header with dropdown nav, photo-style hero, About row, four department cards, dark "Why Choose" band, campus map panel, Apply Now cards, dark footer. */
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --mint:#F2FAF5; --mint2:#E7F6ED; --card:#FFFFFF;
+  --ink:#20382E; --muted:#64776C; --head:#064E36;
+  --g1:#087443; --g2:#087443; --g3:#8fd5a8; --hover:#056039; --on-g1:#FFFFFF;
+  --line:#D7E9DD; --sky:#8fcdf0; --gold:#d9a520;
+  --band:#064E36; --band2:#087443; --on-band:#FFFFFF;
+  --shadow:0 16px 36px -22px rgba(8,116,67,.28);
+  --display:"Outfit","Trebuchet MS",system-ui,sans-serif; --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif; --script:"Dancing Script","Brush Script MT",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance;color:var(--head)}
+p{margin:0}
+a{color:inherit}
+svg.i{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.w{max-width:1200px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:56px}
+.script{font-family:var(--script);font-weight:700;color:var(--g2)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:0;cursor:pointer;font:600 .95rem var(--display);padding:.75rem 1.3rem;border-radius:999px;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s}
+.btn.p{background:var(--g1);color:var(--on-g1);box-shadow:0 10px 22px -12px var(--g1)}
+.btn.p:hover{background:var(--hover);transform:translateY(-3px);box-shadow:0 16px 26px -12px var(--g1)}
+.btn.g{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--g1)}
+.btn.g:hover{background:var(--mint);transform:translateY(-3px)}
+.btn.sm{padding:.5rem 1rem;font-size:.85rem}
+.btn svg{transition:transform .3s}
+.hero .cta .btn{position:relative;overflow:hidden;isolation:isolate}
+.hero .cta .btn::before{content:"";position:absolute;inset:0;z-index:-1;transform:translateX(-101%);transition:transform .45s cubic-bezier(.2,.7,.2,1);background:linear-gradient(90deg,var(--hover),var(--g1))}
+.hero .cta .btn.g::before{background:var(--g1)}
+.hero .cta .btn:hover::before{transform:none}
+.hero .cta .btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 18px 30px -12px rgba(8,116,67,.6)}
+.hero .cta .btn.g:hover{color:#fff;background:transparent;box-shadow:inset 0 0 0 2px var(--g1),0 18px 30px -12px rgba(8,116,67,.5)}
+.hero .cta .btn:hover svg{transform:translateX(4px)}
+.hero .cta .btn:active{transform:translateY(-1px) scale(.98)}
+.btn.wa{background:var(--g1);color:var(--on-g1)}
+:focus-visible{outline:3px solid var(--g2);outline-offset:3px;border-radius:6px}
+.sec-h{text-align:center;margin-bottom:2rem}
+.sec-h h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:700}
+.sec-h p{color:var(--muted)}
+#prog{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:4px;width:0;background:linear-gradient(90deg,var(--g3),var(--g1));z-index:70}
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:linear-gradient(90deg,#FFFFFF 0%,#D2F0DD 28%,#9EDDB6 62%,#5CC488 100%);box-shadow:0 10px 26px -16px rgba(8,116,67,.5);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:1.2rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand svg{width:46px;height:50px;flex:none}
+.brand b{display:block;font:800 1.45rem/1 var(--display);letter-spacing:.02em;color:var(--g1)}
+.brand small{display:block;font:600 .55rem/1.15 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);max-width:150px}
+nav{margin-left:auto;display:flex;gap:.1rem;align-items:center}
+nav>a,.dd>button{font:600 .85rem var(--display);text-decoration:none;padding:.5rem .7rem;border-radius:8px;color:var(--head);background:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;border-bottom:2px solid transparent;transition:.2s}
+nav>a:hover,.dd>button:hover,nav>a.on{color:var(--g1);border-bottom-color:var(--g1);border-radius:8px 8px 0 0}
+.dd{position:relative}
+.menu{position:absolute;top:100%;left:0;min-width:210px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.4rem;box-shadow:var(--shadow);display:none;z-index:5}
+.dd:hover .menu,.dd:focus-within .menu,.dd.open .menu{display:block}
+.menu a{display:block;padding:.55rem .8rem;border-radius:9px;font:500 .9rem var(--display);text-decoration:none;cursor:pointer}
+.menu a:hover{background:var(--mint2);color:var(--g1)}
+.pill{background:var(--g1);color:var(--on-g1);font:600 .78rem var(--display);padding:.55rem 1rem;border-radius:999px;display:inline-flex;gap:.45rem;align-items:center;white-space:nowrap}
+.lang{border:2px solid var(--g1);background:transparent;color:var(--ink);font:700 .75rem var(--display);padding:.3rem .65rem;border-radius:999px;cursor:pointer;letter-spacing:.06em}
+.lang:hover{background:var(--hover);color:var(--on-g1)}
+#burger{display:none;border:0;background:var(--g1);width:42px;height:42px;border-radius:12px;cursor:pointer;color:var(--on-g1);font-size:1.2rem;margin-left:auto}
+@media(max-width:1080px){.pill{display:none}}
+@media(max-width:960px){
+  #burger{display:block}
+  nav{position:absolute;left:0;right:0;top:72px;flex-direction:column;align-items:stretch;background:linear-gradient(180deg,#E4F6EA,#BFE9CF);padding:10px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);display:none;margin:0;max-height:calc(100vh - 80px);overflow-y:auto}
+  nav.open{display:flex}
+  nav>a,.dd>button{width:100%;padding:.8rem .6rem;justify-content:space-between}
+  .menu{position:static;display:none;box-shadow:none;border:0;padding:0 0 0 .8rem}
+  .dd:hover .menu{display:none}.dd.open .menu{display:block}
+  .lang{align-self:flex-start;margin:.4rem .6rem}
+}
+/* hero */
+.hero{padding-block:34px 18px;background:radial-gradient(900px 420px at 80% 0,var(--mint2),transparent 70%)}
+.hgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.5rem;align-items:center}
+.wel{display:inline-flex;font:600 .78rem var(--display);padding:.4rem 1rem;border-radius:999px;border:1.5px solid var(--g2);color:var(--head);background:linear-gradient(90deg,#E7F6ED,#B9E8CC);box-shadow:0 8px 18px -8px rgba(8,116,67,.35)}
+.hero h1{font-size:clamp(2.3rem,5vw,3.9rem);font-weight:800;color:var(--head);margin-block:1rem .2rem;line-height:1.05}
+.hero h1 .script{color:var(--g1);display:block;font-size:1.12em;font-weight:700;line-height:1.05}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin-block:1rem .8rem;font:600 .86rem var(--display)}
+.tags span+span{padding-left:.9rem;border-left:2px solid var(--line)}
+.hero p.lead{color:var(--muted);max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.stage{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:16/11;background:linear-gradient(#bfe6ff,#eaf8ff 70%);box-shadow:var(--shadow)}
+.stage .bg{position:absolute;inset:0;width:100%;height:100%}
+.stage .f{position:absolute;bottom:-2%;height:92%;width:auto;filter:drop-shadow(0 14px 14px rgba(0,0,0,.18))}
+.stage .f1{left:22%;animation:bob 5s ease-in-out infinite}.stage .f2{left:46%;animation:bob 5s ease-in-out -2.5s infinite}
+.stage .tag{position:absolute;right:5%;top:12%;font-size:clamp(1.3rem,3vw,2.2rem);line-height:1.05;transform:rotate(-8deg);text-align:left}
+.sun{position:absolute;right:12%;top:6%;width:70px;height:70px;border-radius:50%;background:radial-gradient(#fff6c8,#ffe48a);animation:pulse 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@media(max-width:900px){.hgrid{grid-template-columns:1fr}}
+
+.stage.photo{aspect-ratio:4/5;width:100%;max-width:440px;justify-self:center;background:none;overflow:visible;box-shadow:none;position:relative}
+.stage.photo::before{content:"";position:absolute;inset:6% -5% -5% 7%;border-radius:34px;background:linear-gradient(150deg,var(--g3),var(--g1));transform:rotate(3deg);opacity:.9}
+.stage.photo img{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:30px;display:block;box-shadow:var(--shadow);border:4px solid var(--card)}
+.lgb{position:absolute;left:-4%;bottom:7%;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:.5rem 1.1rem;box-shadow:var(--shadow);animation:bob 5s ease-in-out infinite}
+.lgb .script{font-size:1.35rem;color:var(--g1)}
+@media(max-width:900px){.stage.photo{max-width:380px;margin-right:auto}.lgb{left:2%}}
+
+.hero{position:relative;overflow:hidden;min-height:0;padding-block:0;background:linear-gradient(135deg,#FFFFFF 0%,#F2FAF5 50%,#E7F6ED 100%)}
+.hero>.w{position:relative;z-index:2}
+.hgrid{grid-template-columns:minmax(0,560px);min-height:470px;padding-block:28px;align-content:center}
+.hero-bg{position:absolute;top:0;right:max(2%,env(safe-area-inset-right,0px));bottom:0;width:50%;z-index:1;display:flex;align-items:center;justify-content:center;animation:fade 1.2s ease}
+.hero-bg::before{content:"";position:absolute;right:0;bottom:0;width:100%;height:78%;background:radial-gradient(ellipse 62% 70% at 50% 100%,rgba(8,116,67,.14),rgba(143,213,168,.12) 55%,transparent 75%);pointer-events:none}
+.hero-bg::after{display:none;content:"";position:absolute;left:50%;bottom:1.5%;transform:translateX(-47%);width:62%;height:5%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(6,78,54,.30),transparent 70%);filter:blur(5px)}
+.hero-bg img{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;border-radius:0;border:0;box-shadow:0 4px 10px rgba(8,116,67,.12),0 30px 50px -20px rgba(8,116,67,.4)}
+.hero-bg .lgt{position:absolute;z-index:2;left:1%;bottom:14%;font-size:clamp(1.25rem,2.2vw,1.7rem);line-height:1.05;color:var(--g1);transform:rotate(-6deg);background:#fff;padding:.5rem .9rem;border-radius:16px;box-shadow:var(--shadow);text-align:left}
+@media(max-width:900px){
+  .hero{min-height:0}
+  .hgrid{min-height:0;padding-bottom:calc(min(62vw,300px) + 22px)}
+  .hero-bg{top:auto;left:0;right:0;width:100%;height:min(62vw,300px)}
+  .hero-bg{align-items:flex-end;padding:0 16px 14px;box-sizing:border-box}
+  .hero-bg img{width:100%;height:auto}
+  .hero-bg::after{transform:translateX(-50%);width:70%}
+  .hero-bg .lgt{left:auto;right:2%;top:auto;bottom:14%;font-size:1.2rem}
+}
+/* about */
+.ab{display:grid;grid-template-columns:1fr 1.05fr .8fr;gap:1.6rem;align-items:center}
+.abimg{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:16/11;background:linear-gradient(#bfe6ff,#eaf8ff);box-shadow:var(--shadow)}
+.abimg>img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block;transition:transform .7s}
+.abimg:hover>img{transform:scale(1.05)}
+.since{position:absolute;left:0;bottom:0;right:35%;padding:1rem 1.2rem;color:#fff;display:flex;gap:.7rem;align-items:center;background:linear-gradient(90deg,var(--band),transparent);font:600 .85rem/1.2 var(--display)}
+.since b{display:block;font-size:1.15rem}
+.since svg{width:34px;height:34px;color:#f3cf63}
+.abt h2{font-size:1.8rem;display:flex;align-items:center;gap:.7rem}
+.abt h2::after{content:"";height:2px;width:50px;background:var(--g2)}
+.abt h3{font:600 1rem var(--display);color:var(--muted);margin-block:.2rem .7rem}
+.abt p{color:var(--muted);font-size:.95rem;margin-bottom:.7rem}
+.stats{display:flex;flex-direction:column;gap:.7rem}
+.stat{display:flex;gap:.8rem;align-items:center;background:var(--mint);border:1px solid var(--line);border-radius:16px;padding:.8rem 1rem;transition:transform .3s}
+.stat{opacity:0;transform:translateX(40px)}
+.stats.in .stat{animation:statIn .7s cubic-bezier(.2,.7,.2,1) forwards}
+.stats.in .stat:nth-child(2){animation-delay:.15s}.stats.in .stat:nth-child(3){animation-delay:.3s}.stats.in .stat:nth-child(4){animation-delay:.45s}
+@keyframes statIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.stat{box-shadow:0 2px 6px rgba(8,116,67,.06),0 14px 26px -14px rgba(8,116,67,.28)}
+.stat:hover{transform:translateX(-6px) scale(1.02);box-shadow:0 4px 10px rgba(8,116,67,.1),0 22px 34px -14px rgba(8,116,67,.4);background:var(--mint2)}
+.stat .ci{transition:transform .5s,background .3s,color .3s}
+.stat:hover .ci{transform:rotate(-12deg) scale(1.12);background:var(--g1);color:#fff}
+.stats.in .stat .ci{animation:ciPop .6s ease .5s both}
+@keyframes ciPop{0%{transform:scale(.6)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
+.stat .ci{width:44px;height:44px;border-radius:50%;background:var(--card);color:var(--g1);display:grid;place-items:center;flex:none;border:1px solid var(--line);font-size:1.3rem}
+.stat b{display:block;font:700 .95rem var(--display)}.stat small{color:var(--muted);font-weight:600}
+@media(max-width:980px){.ab{grid-template-columns:1fr}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
+.tlw{margin-top:2rem}
+.tl{position:relative;display:flex;flex-direction:column;gap:1rem;padding-left:2rem;max-width:760px;margin-inline:auto}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--g3),var(--g1));border-radius:3px}
+.tli{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.9rem 1.2rem}
+.tli::before{content:"";position:absolute;left:calc(-2rem + 1px);top:1.1rem;width:15px;height:15px;border-radius:50%;background:var(--g1);border:3px solid var(--bg)}
+.yr{font:800 1.3rem var(--display);color:var(--g1)}
+.tli p{color:var(--muted);font-size:.95rem}
+/* departments */
+#depts{background:var(--mint)}
+.dg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.dc{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s;min-width:0}
+.dc{box-shadow:0 2px 6px rgba(8,116,67,.08),0 22px 40px -14px rgba(8,116,67,.34)}
+.dc:hover{transform:translateY(-8px);box-shadow:0 4px 10px rgba(8,116,67,.10),0 34px 56px -16px rgba(8,116,67,.42)}
+.dimg{aspect-ratio:16/8;overflow:hidden}
+.dimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.dc:hover .dimg img{transform:scale(1.07)}
+.badge{width:44px;height:44px;border-radius:50%;background:var(--mint2);color:var(--g1);display:grid;place-items:center;margin:-22px 0 0 18px;border:3px solid var(--card);position:relative;font-size:1.25rem}
+.db{padding:.4rem 1.1rem 1rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
+.db h3{font-size:1.15rem}
+.db .sub{font:600 .75rem var(--display);color:var(--g2)}
+.db p{font-size:.86rem;color:var(--muted)}
+.db .btn{align-self:flex-start;margin-top:auto}
+.db .trs{margin-bottom:.5rem}
+.trs{list-style:none;margin:0;padding:0;columns:2;column-gap:.6rem;font-size:.72rem;color:var(--muted)}
+.trs li{break-inside:avoid;padding-left:1.1rem;position:relative;margin-bottom:.2rem;line-height:1.3}
+.trs li::before{content:"";position:absolute;left:0;top:.3em;width:.45rem;height:.45rem;border-right:2px solid var(--g1);border-bottom:2px solid var(--g1);transform:rotate(45deg) scale(.9)}
+@media(max-width:1000px){.dg{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.dg{grid-template-columns:1fr}}
+/* why */
+.why{background:linear-gradient(110deg,var(--band),var(--g1));color:#fff;padding-block:32px;position:relative;overflow:hidden}
+
+.tms{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.tm{margin:0;background:#fff;color:var(--ink);border-radius:26px;display:grid;grid-template-columns:150px 1fr;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08),0 28px 44px -20px rgba(0,0,0,.4);transition:transform .35s,box-shadow .35s}
+.tm:hover{transform:translateY(-6px)}
+.tph{background:var(--mint2);position:relative;overflow:hidden}
+.tph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block}
+.tph .av{position:absolute;inset:0}
+.tph .av{display:grid;place-items:center;color:var(--g3);background:linear-gradient(160deg,var(--mint2),#cdeedb)}
+.tph .av svg{width:70%;height:auto}
+.tb{padding:1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;position:relative}
+.tb .qm{width:24px;height:24px;color:var(--g3)}
+.tb blockquote{margin:0;font-size:.94rem;line-height:1.5;color:var(--ink)}
+.tb figcaption{margin-top:auto;display:flex;flex-direction:column;gap:.1rem}
+.tb figcaption b{font:700 1rem var(--display);color:var(--head)}
+.tb figcaption span{color:var(--muted);font-size:.85rem}
+.tb figcaption em{font-style:normal;color:var(--g1);font:600 .78rem var(--display);margin-top:.2rem}
+@media(max-width:1000px){.tms{grid-template-columns:1fr}}
+@media(max-width:480px){.tm{grid-template-columns:1fr}.tph{height:260px}.tph img{object-position:50% 12%}}
+.wg{display:grid;grid-template-columns:1.8fr .9fr;gap:2rem;align-items:center;position:relative;z-index:1}
+.why h2{font-size:1.7rem;color:#fff}.why .s{color:rgba(255,255,255,.88);margin-bottom:1.4rem}
+.wi{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem;text-align:center}
+.wi div{display:flex;flex-direction:column;align-items:center;gap:.6rem;font:600 .78rem/1.25 var(--display);transition:transform .3s}
+.wi div:hover{transform:translateY(-6px)}
+.wi .c{width:60px;height:60px;border-radius:50%;border:2px solid rgba(255,255,255,.75);display:grid;place-items:center;font-size:1.6rem;background:rgba(255,255,255,.12);color:#fff}
+.q{border-left:3px solid rgba(255,255,255,.55);padding-left:1.4rem}
+.q .script{color:#fff;font-size:1.5rem;line-height:1.25}
+.q small{display:block;margin-top:.6rem;color:rgba(255,255,255,.85)}
+@media(max-width:1000px){.wg{grid-template-columns:1fr}.wi{grid-template-columns:repeat(3,1fr)}.q{border-left:0;padding-left:0}}
+@media(max-width:520px){.wi{grid-template-columns:repeat(2,1fr)}}
+/* campuses */
+.cg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;align-items:stretch;max-width:1100px;margin-inline:auto}
+.cg>*,.cl>*{width:100%;min-width:0}
+.cl{display:contents}
+.cg .cc:not(:has(.cimg)),.cg .gd{justify-content:center}
+.cg .cc,.cg .cc.on,.cg .gd{box-shadow:0 2px 6px rgba(8,116,67,.08),0 22px 40px -14px rgba(8,116,67,.34);transition:transform .35s,box-shadow .35s,border-color .35s}
+.cg .cc:hover,.cg .cc.on:hover,.cg .gd:hover{transform:translateY(-8px);box-shadow:0 4px 10px rgba(8,116,67,.10),0 34px 56px -16px rgba(8,116,67,.42)}
+.cg .gd{position:static;width:auto;margin:0;padding:1.4rem;gap:.8rem}
+@media(max-width:900px){.cg{grid-template-columns:1fr;max-width:560px}}
+.cg .gd b{font-size:1.1rem;color:var(--head)}
+
+.cc{border:1px solid var(--line);border-radius:18px;padding:1rem;display:flex;flex-direction:column;gap:.5rem;background:var(--card);cursor:pointer;transition:.3s;min-width:0}
+.cc.on,.cc:hover{border-color:var(--g2);box-shadow:var(--shadow)}
+.cc{overflow:hidden}
+.cimg{display:block;width:calc(100% + 2rem);height:auto;max-width:none;margin:-1rem -1rem .3rem;aspect-ratio:16/9;object-fit:cover;object-position:50% 40%;transition:transform .6s}
+.cc:hover .cimg{transform:scale(1.04)}
+.cc .t{display:flex;gap:.5rem;align-items:center;font:700 .95rem var(--display)}
+.cc .t svg{color:var(--g1);font-size:1.2rem}
+.cc small{color:var(--muted);margin-left:1.7rem}
+.mapw{position:relative;border:1px solid var(--line);border-radius:20px;overflow:hidden;min-height:330px;background:#e4f3e6}
+.mapw>svg{width:100%;height:100%;display:block;position:absolute;inset:0}
+.gd{position:absolute;right:12px;top:12px;width:min(230px,56%);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.9rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:var(--shadow)}
+.gd b{font:700 .85rem var(--display)}.gd small{color:var(--muted)}
+.dest{display:flex;gap:.4rem}
+.dest button{flex:1;border:1.5px solid var(--line);background:var(--mint);color:var(--ink);font:600 .78rem var(--display);padding:.4rem;border-radius:999px;cursor:pointer}
+.dest button[aria-pressed="true"]{background:var(--g1);color:var(--on-g1);border-color:var(--g1)}
+.pulse{transform-origin:center;transform-box:fill-box;animation:pl 2.2s ease-out infinite}
+@keyframes pl{from{transform:scale(.4);opacity:.9}to{transform:scale(2.4);opacity:0}}
+.road{position:relative;border-radius:20px;overflow:hidden;min-height:260px;border:1px solid var(--line)}
+.road svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.road .script{position:absolute;right:8%;bottom:20%;color:#fff;font-size:1.5rem;line-height:1.1;text-shadow:0 2px 8px rgba(0,0,0,.45);transform:rotate(-7deg)}
+
+/* gallery */
+#gallery{background:var(--bg)}
+#galleryin{background:linear-gradient(180deg,#FFFFFF 0%,#EAF8EF 38%,#CDEFDB 72%,#A9E2C0 100%);border:3px solid var(--g1);border-radius:44px;padding:2.2rem 2rem 2.4rem;box-shadow:0 4px 10px rgba(8,116,67,.08),0 26px 50px -24px rgba(8,116,67,.35)}
+@media(max-width:600px){#galleryin{border-radius:30px;padding:1.5rem 1rem 1.8rem;margin-inline:12px}}
+.ug{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.uc{background:var(--mint);border:1px solid var(--line);border-radius:26px;padding:1.2rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center;transition:transform .4s;min-width:0}
+.uc:hover{transform:translateY(-6px)}
+.uc .pic{background:radial-gradient(circle at 50% 40%,#fff,var(--mint2));border-radius:20px;padding:1rem 0 0;display:grid;place-items:end center}
+.uc .pic svg{height:300px;max-width:100%;width:auto}
+.uc h3{font-size:1.3rem;margin-bottom:.7rem}
+.uc ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}
+.uc li{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:.92rem}
+.sw{width:22px;height:22px;border-radius:7px;border:2px solid var(--line);flex:none}
+.gt{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.2rem}
+.gt figure{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);transition:transform .35s}
+.gt figure:hover{transform:translateY(-6px) rotate(-.6deg)}
+.gt svg,.gt img{display:block;width:100%;aspect-ratio:16/10;height:auto;object-fit:cover}
+.gt figcaption{padding:.55rem .9rem;font:600 .82rem var(--display);color:var(--muted)}
+@media(max-width:960px){.ug{grid-template-columns:1fr}}
+@media(max-width:520px){.uc{grid-template-columns:1fr}}
+.ph{display:grid;grid-template-columns:1.1fr 1.1fr .8fr;grid-template-rows:300px 260px;gap:1rem}
+.pi{position:relative;border:0;padding:0;border-radius:20px;overflow:hidden;cursor:zoom-in;background:var(--mint2);box-shadow:var(--shadow);min-width:0}
+.pi img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.pi:hover img{transform:scale(1.06)}
+.pi span{position:absolute;left:0;right:0;bottom:0;padding:1.6rem 1rem .7rem;color:#fff;font:600 .85rem var(--display);text-align:left;background:linear-gradient(transparent,rgba(6,78,54,.85))}
+.pi1{grid-column:1/3;grid-row:1}.pi4{grid-column:3;grid-row:1/3}.pi2{grid-column:1;grid-row:2}.pi3{grid-column:2;grid-row:2}
+.pi4 img{object-position:50% 30%}.pi1 img{object-position:50% 78%}
+@media(max-width:760px){.ph{grid-template-columns:1fr 1fr;grid-template-rows:auto}.pi{aspect-ratio:4/3}.pi1{grid-column:1/3;grid-row:auto}.pi4{grid-column:1/3;grid-row:auto;aspect-ratio:4/5}.pi2,.pi3{grid-column:auto;grid-row:auto}.pi5{grid-column:1/3;grid-row:auto}}
+.lb{max-width:960px;padding:0;background:#000;overflow:hidden}
+.lb img{display:block;width:100%;max-height:82vh;object-fit:contain;background:#000}
+.lb p{color:#fff;padding:.8rem 1.2rem;font:600 .95rem var(--display);background:var(--band)}
+.uc .pic.photo{padding:0;overflow:hidden;position:relative;min-height:320px;background:var(--mint2);box-shadow:var(--shadow)}
+.uc .pic.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 85%;display:block}
+@media(max-width:520px){.uc .pic.photo{min-height:0;aspect-ratio:4/5}.uc .pic.photo img{object-position:50% 45%}}
+.pi5{grid-column:1/3;grid-row:auto}
+.lb{max-width:960px;padding:0;background:#000;overflow:hidden}
+.lb img{display:block;width:100%;max-height:82vh;object-fit:contain;background:#000}
+.lb p{color:#fff;padding:.8rem 1.2rem;font:600 .95rem var(--display);background:var(--band)}
+.uw{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:1.2rem;align-items:stretch}
+.uw .ug{grid-template-columns:1fr;align-content:stretch}
+.ufig{margin:0;position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);min-height:420px;background:var(--mint2)}
+.ufig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.ufig figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .8rem;color:#fff;font:600 .85rem var(--display);background:linear-gradient(transparent,rgba(6,78,54,.85))}
+@media(max-width:860px){.uw{grid-template-columns:1fr}.ufig{min-height:0;aspect-ratio:4/5}}
+.pi5{grid-column:1/-1;grid-row:3;justify-self:center;width:min(100%,860px);aspect-ratio:3/2}
+.pi5 img{object-position:50% 50%}
+.ph.collapsed{grid-template-columns:1fr;grid-template-rows:380px;max-width:900px;margin-inline:auto}
+.ph.collapsed .pi:not(.pi1){display:none}
+.ph.collapsed .pi1{grid-column:1;grid-row:1;aspect-ratio:auto}
+.more-row{display:flex;justify-content:center;margin-top:1.2rem}
+@media(max-width:760px){.ph.collapsed{grid-template-rows:auto}.ph.collapsed .pi1{aspect-ratio:4/3}}
+.pi{animation:fade .5s ease}
+.dimg img[src*="dept-art"]{object-position:50% 24%}
+/* apply */
+#apply{background:linear-gradient(135deg,#FFFFFF 0%,#F2FAF5 45%,#E7F6ED 100%);padding-block:44px}
+.ag{display:grid;grid-template-columns:1.9fr .9fr;gap:0 1.4rem;align-items:stretch}
+.ag .git{margin-top:1rem}
+@media(min-width:1061px){.ag .git{margin-top:0}.ag>div:first-child{display:contents}.ag h2,.ag .s{grid-column:1/-1}.ag .git{height:100%;justify-content:flex-start}}
+.ag h2{font-size:1.6rem}.ag .s{color:var(--muted);margin-bottom:1rem}
+.ac{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ap{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem;display:flex;gap:.9rem;transition:transform .3s,box-shadow .3s}
+.ap:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.ap .ci{width:46px;height:46px;border-radius:50%;background:var(--mint2);color:var(--g1);display:grid;place-items:center;flex:none;font-size:1.4rem}
+.ap>div:last-child{display:flex;flex-direction:column;flex:1;min-width:0}.ap .btn{margin-top:auto;align-self:flex-start}
+.ap h3{font-size:1rem;margin-bottom:.3rem}.ap p{color:var(--muted);font-size:.85rem;margin-bottom:.7rem}
+.git{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem;display:flex;flex-direction:column;gap:.55rem;min-width:0}
+.git h3{font-size:1rem}
+.git .btn.wa{margin-top:auto;align-self:flex-start;width:auto;max-width:100%;padding:.45rem .9rem;font-size:.82rem}
+.git .r{display:flex;gap:.5rem;align-items:center;font-size:.9rem;overflow-wrap:anywhere}
+.git .r svg{color:var(--g1);font-size:1.15rem}
+.cpb{border:0;background:var(--mint2);color:var(--g1);font:600 .7rem var(--display);padding:.15rem .55rem;border-radius:999px;cursor:pointer;margin-left:auto}
+.fut{display:flex;align-items:center;justify-content:center;text-align:center}
+.fut .script{font-size:1.9rem;line-height:1.15;transform:rotate(-6deg)}
+@media(max-width:1060px){.ag{grid-template-columns:1fr}.fut{justify-content:flex-start}.fut .script{transform:none}}
+@media(max-width:620px){.ac{grid-template-columns:1fr}}
+/* modals */
+.modal[hidden],[hidden]{display:none!important}
+.modal{position:fixed;inset:0;z-index:90;background:rgba(6,36,15,.6);display:flex;justify-content:center;overflow-y:auto;padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fade .25s ease}
+.pop{width:100%;max-width:860px;margin:auto;position:relative;background:var(--card);border:1px solid var(--line);border-radius:30px;padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--shadow);animation:pop .35s cubic-bezier(.2,.8,.2,1)}
+.x{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:0;background:var(--g1);color:var(--on-g1);font-size:1.5rem;line-height:1;cursor:pointer;z-index:2}
+@keyframes fade{from{opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.97)}}
+.tabs{display:flex;flex-wrap:wrap;gap:.6rem;padding-right:52px}
+.tab{border:2px solid var(--g1);background:var(--card);color:var(--ink);font:600 .95rem var(--display);padding:.6rem 1.2rem;border-radius:999px;cursor:pointer;transition:.25s}
+.tab[aria-selected="true"]{background:var(--g1);color:var(--on-g1)}
+.gcard{grid-column:1/-1}
+.pop h3.gh3{font-size:1.5rem;color:var(--g1);margin:1.2rem 0 .8rem;padding-right:40px}
+.gnote{background:var(--mint2);border:1px solid var(--g3);border-radius:16px;padding:.8rem 1rem;font-size:.92rem;line-height:1.45}
+.gcols{display:grid;grid-template-columns:1.25fr 1fr;gap:1.4rem;margin-top:.4rem}
+.gentry h4,.gcols h4{font:700 .75rem var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--g1);margin:1rem 0 .5rem}
+.gentry{margin-top:.2rem}
+@media(min-width:901px){.hero .cta .btn{padding:.65rem .85rem;font-size:.86rem;gap:.4rem}.hero .cta{gap:.45rem;flex-wrap:nowrap}}
+.gtr{font:700 .75rem var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--g1);margin:1.4rem 0 .6rem}
+.gtg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.6rem}
+.gt1{background:var(--mint);border:1px solid var(--line);border-radius:14px;padding:.6rem .8rem;display:flex;flex-direction:column;gap:.15rem;font-size:.85rem}
+.gt1 b{color:var(--head);font-family:var(--display)}.gt1 span{color:var(--muted)}
+.gl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.gl li{position:relative;padding-left:1.7rem;font-size:.93rem;line-height:1.4}
+.gl li::before{content:"✓";position:absolute;left:0;top:0;width:1.25rem;height:1.25rem;border-radius:50%;background:var(--g1);color:#fff;font-size:.72rem;display:grid;place-items:center}
+.fee{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:.92rem}
+.fee td{padding:.6rem .85rem;border-bottom:1px solid var(--line)}
+.fee tr:last-child td{border-bottom:0}
+.fee tr:nth-child(odd) td{background:var(--mint)}
+.fee td+td{text-align:right;font-weight:700;color:var(--head);white-space:nowrap}
+.gsm{color:var(--muted);font-size:.8rem;margin-top:.6rem}
+#amodal .tabs{gap:.45rem}#amodal .tab{font-size:.85rem;padding:.45rem .95rem}
+@media(max-width:760px){.gcols{grid-template-columns:1fr}}
+
+.fg{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.4rem}
+.fld{display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.fld.full{grid-column:1/-1}
+label{font-weight:700;font-size:.88rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:.7rem .9rem;width:100%;min-width:0;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--g2);box-shadow:0 0 0 4px color-mix(in srgb,var(--g3) 40%,transparent)}
+textarea{min-height:100px;resize:vertical}
+@media(max-width:640px){.fg{grid-template-columns:1fr}}
+.res{margin-top:1.4rem;background:var(--mint);border:2px solid var(--g2);border-radius:22px;padding:1.2rem;display:flex;flex-direction:column;gap:.9rem}
+.res textarea{min-height:170px;font-size:.9rem}
+.note{font-size:.88rem;color:var(--muted)}
+.dm{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.dm .scene{border-radius:22px;overflow:hidden;min-height:260px}
+.dm .scene img{display:block;width:100%;height:100%;object-fit:cover}
+.dm h3{font-size:1.8rem;color:var(--g1)}.dm .lead{color:var(--muted);margin-top:.3rem}
+.dm h4{font:700 .75rem var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--g1);margin:1rem 0 .4rem}
+.dm ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.35rem}
+.dm li{padding-left:1.4rem;position:relative;font-size:.95rem}
+.dm li::before{content:"";position:absolute;left:0;top:.5em;width:.7rem;height:.7rem;border-radius:50%;background:var(--g3)}
+.cr{display:flex;flex-wrap:wrap;gap:.4rem}
+.cr span{background:var(--mint);border:1px solid var(--line);padding:.25rem .75rem;border-radius:999px;font-weight:600;font-size:.85rem}
+.tg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin-top:1rem}
+.tc{background:var(--mint);border:1px solid var(--line);border-radius:18px;padding:1rem;display:flex;flex-direction:column;gap:.35rem}
+.code{align-self:flex-start;font:700 .68rem var(--display);letter-spacing:.12em;padding:.2rem .55rem;border-radius:8px;background:var(--mint2);color:var(--g1);border:1px solid var(--line)}
+.tc h4{font:700 1rem var(--display);color:var(--head);margin:0;text-transform:none;letter-spacing:0}
+.tc p{color:var(--muted);font-size:.85rem}.tc small{font-weight:600;color:var(--g1);font-size:.8rem}
+@media(max-width:760px){.dm{grid-template-columns:1fr}}
+#fmodal .pop{max-width:640px;padding:1.2rem 1.3rem 1.3rem;border-radius:24px;background:linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.96) 55%),url(images/hero.jpg) center 20%/cover}
+#fmodal .tabs{gap:.45rem}
+#fmodal .tab{font-size:.85rem;padding:.45rem .95rem}
+#fmodal .fg{gap:.6rem .8rem;margin-top:.9rem}
+#fmodal label{font-size:.8rem}
+#fmodal input,#fmodal select,#fmodal textarea{font-size:.9rem;padding:.45rem .7rem;border-radius:10px}
+#fmodal textarea{min-height:64px}
+#fmodal .btn{padding:.6rem 1.1rem;font-size:.9rem}
+#fmodal .cta{margin-top:1rem}
+#fmodal .x{width:34px;height:34px;top:10px;right:10px;font-size:1.3rem}
+#fmodal .tabs{padding-right:44px}
+/* footer */
+footer{background:var(--band);color:#fff;padding-block:26px calc(20px + 0px)}
+.fr{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem 2rem;justify-content:space-between}
+.fr .brand b{color:#fff}.fr .brand small{color:rgba(255,255,255,.75)}
+.fn{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;font:500 .8rem var(--display)}
+.fn a{text-decoration:none;opacity:.9;cursor:pointer}.fn a:hover{opacity:1;text-decoration:underline}
+.fs{display:flex;gap:.8rem;align-items:center;font:500 .8rem var(--display)}
+.fs a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;color:#fff;font-size:1.1rem;transition:transform .25s,background .25s}
+.fs a:hover{background:var(--g3);color:var(--head);transform:translateY(-3px)}
+.fc{margin-top:1rem;font-size:.78rem;opacity:.75;text-align:center}
+#top:hover{background:var(--hover)}
+#top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:0;background:var(--g1);color:var(--on-g1);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:55}
+#top.show{opacity:1;pointer-events:auto}
+.rv{transform:translateY(24px);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{transform:none}
+@media(prefers-reduced-motion:reduce){.stat{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9eef0"/></linearGradient>
+    <linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9bd6f5"/><stop offset="1" stop-color="#6fb8e3"/></linearGradient>
+  </defs>
+  <symbol id="girl" viewBox="0 0 200 420">
+    <ellipse cx="100" cy="408" rx="62" ry="9" fill="#000" opacity=".16"/>
+    <circle cx="100" cy="58" r="30" fill="#17100d"/><circle cx="66" cy="40" r="15" fill="#17100d"/><circle cx="134" cy="40" r="15" fill="#17100d"/>
+    <rect x="90" y="96" width="20" height="26" rx="8" fill="#7a4a2e"/>
+    <ellipse cx="100" cy="74" rx="26" ry="30" fill="#8a5636"/>
+    <path d="M74 60q26-22 52 0q-6-16-26-16t-26 16z" fill="#17100d"/>
+    <circle cx="90" cy="76" r="3" fill="#17100d"/><circle cx="110" cy="76" r="3" fill="#17100d"/>
+    <path d="M89 90q11 10 22 0" stroke="#4b1f14" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M52 170 L48 244 q0 10 9 10 q9 0 9-10 L70 170 Z" fill="#8a5636"/><path d="M148 170 L152 244 q0 10-9 10 q-9 0-9-10 L130 170 Z" fill="#8a5636"/>
+    <path d="M62 126 Q100 108 138 126 L156 176 L132 184 L130 160 L130 216 L70 216 L70 160 L68 184 L44 176 Z" fill="url(#gw)" stroke="#cfd9dc" stroke-width="1.5"/>
+    <circle cx="118" cy="152" r="9" fill="#087443"/><text x="118" y="156" font-size="11" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">R</text>
+    <path d="M70 212 L130 212 L156 306 Q100 322 44 306 Z" fill="url(#gs)"/>
+    <path d="M86 214 L80 312 M100 216 L100 316 M114 214 L120 312" stroke="#5aa6d4" stroke-width="2" opacity=".6"/>
+    <rect x="80" y="306" width="15" height="52" rx="6" fill="#8a5636"/><rect x="105" y="306" width="15" height="52" rx="6" fill="#8a5636"/>
+    <rect x="78" y="350" width="19" height="36" rx="6" fill="#fff" stroke="#cfd9dc"/><rect x="103" y="350" width="19" height="36" rx="6" fill="#fff" stroke="#cfd9dc"/>
+    <path d="M72 396 q0-14 14-14 h12 v18 h-26z" fill="#111"/><path d="M128 396 q0-14-14-14 h-12 v18 h26z" fill="#111"/>
+  </symbol>
+  <symbol id="boy" viewBox="0 0 200 420">
+    <ellipse cx="100" cy="408" rx="62" ry="9" fill="#000" opacity=".16"/>
+    <rect x="90" y="96" width="20" height="26" rx="8" fill="#6b3f26"/>
+    <ellipse cx="100" cy="72" rx="27" ry="31" fill="#7a4a2e"/>
+    <path d="M72 62 q4-30 28-30 t28 30 q-6-12-28-12 t-28 12z" fill="#120c0a"/>
+    <circle cx="90" cy="76" r="3" fill="#17100d"/><circle cx="110" cy="76" r="3" fill="#17100d"/>
+    <path d="M89 90q11 10 22 0" stroke="#3b160d" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M50 172 L46 246 q0 10 9 10 q9 0 9-10 L70 172 Z" fill="#7a4a2e"/><path d="M150 172 L154 246 q0 10-9 10 q-9 0-9-10 L130 172 Z" fill="#7a4a2e"/>
+    <path d="M58 126 Q100 108 142 126 L160 178 L134 186 L132 160 L132 222 L68 222 L68 160 L66 186 L40 178 Z" fill="url(#gw)" stroke="#cfd9dc" stroke-width="1.5"/>
+    <circle cx="120" cy="152" r="9" fill="#087443"/><text x="120" y="156" font-size="11" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">R</text>
+    <path d="M68 218 L132 218 L134 388 L104 388 L100 262 L96 388 L66 388 Z" fill="url(#gs)"/>
+    <path d="M100 222 L100 262" stroke="#5aa6d4" stroke-width="2"/><rect x="68" y="218" width="64" height="7" fill="#5aa6d4"/>
+    <path d="M62 400 q0-16 16-16 h22 v18 h-38z" fill="#111"/><path d="M138 400 q0-16-16-16 h-22 v18 h38z" fill="#111"/>
+  </symbol>
+  <symbol id="bldg" viewBox="0 0 480 300">
+    <rect y="248" width="480" height="52" fill="#7ccf8a"/>
+    <path d="M200 300 L225 250 H255 L285 300 Z" fill="#ead9b8"/>
+    <circle cx="32" cy="190" r="44" fill="#3a9a52"/><rect x="28" y="215" width="8" height="40" fill="#7a5a3a"/>
+    <circle cx="452" cy="182" r="48" fill="#2f8a47"/><rect x="448" y="210" width="8" height="44" fill="#7a5a3a"/>
+    <rect x="70" y="112" width="340" height="140" fill="#f8f8f2" stroke="#d9d9cf"/>
+    <path d="M55 112 H425 L402 82 H78 Z" fill="#2e8b57"/>
+    <rect x="190" y="72" width="100" height="180" fill="#ffffff" stroke="#d9d9cf"/>
+    <path d="M178 72 H302 L240 34 Z" fill="#087443"/>
+    <rect x="203" y="102" width="74" height="30" rx="4" fill="#fff" stroke="#087443" stroke-width="2"/>
+    <text x="240" y="123" font-size="16" font-weight="800" text-anchor="middle" fill="#087443" font-family="sans-serif">ROHI</text>
+    <g fill="#9fd3ea" stroke="#2e8b57" stroke-width="2">
+      <rect x="88" y="140" width="24" height="32"/><rect x="124" y="140" width="24" height="32"/><rect x="158" y="140" width="22" height="32"/>
+      <rect x="88" y="196" width="24" height="32"/><rect x="124" y="196" width="24" height="32"/><rect x="158" y="196" width="22" height="32"/>
+      <rect x="300" y="140" width="22" height="32"/><rect x="332" y="140" width="24" height="32"/><rect x="368" y="140" width="24" height="32"/>
+      <rect x="300" y="196" width="22" height="32"/><rect x="332" y="196" width="24" height="32"/><rect x="368" y="196" width="24" height="32"/>
+    </g>
+    <rect x="224" y="196" width="32" height="56" rx="3" fill="#2e8b57"/><rect x="70" y="244" width="340" height="8" fill="#087443"/>
+    <ellipse cx="120" cy="262" rx="40" ry="10" fill="#4aa862"/><ellipse cx="370" cy="264" rx="44" ry="10" fill="#4aa862"/>
+  </symbol>
+</svg>
+
+<div id="prog"></div>
+<header>
+  <div class="w hd">
+    <a class="brand" href="#home" aria-label="Rohi">
+      <svg viewBox="0 0 46 50" aria-hidden="true"><path d="M23 2l18 6v16c0 12-8 20-18 24C13 44 5 36 5 24V8z" fill="#087443"/><path d="M23 7l13 4.5V24c0 9-6 15-13 18C16 39 10 33 10 24V11.5z" fill="#fff"/><path d="M14 22l9-4 9 4-9 4z" fill="#087443"/><path d="M17 26v4c3 2 9 2 12 0v-4" fill="none" stroke="#087443" stroke-width="2"/><circle cx="23" cy="36" r="2.2" fill="#d9a520"/></svg>
+      <span><b>ROHI</b><small>Bilingual Comprehensive High School<br>Loum</small></span>
+    </a>
+    <button id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav"></nav>
+    <span class="pill" id="pill"></span>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="home"><div class="hero-bg" aria-hidden="false"><img id="heroimg" src="images/hero-lab.jpg" width="1280" height="720" decoding="async" alt="" fetchpriority="high"></div><div class="w" id="heroin"></div></div>
+  <section id="about"><div class="w" id="aboutin"></div></section>
+  <section id="depts"><div class="w" id="deptsin"></div></section>
+  <div class="why" id="why"><div class="w" id="whyin"></div></div>
+  <section id="campus"><div class="w" id="campusin"></div></section>
+  <section id="gallery"><div class="w" id="galleryin"></div></section>
+  <section id="apply"><div class="w" id="applyin"></div></section>
+</main>
+
+<footer id="contact"><div class="w" id="footin"></div></footer>
+
+<div class="modal" id="fmodal" hidden role="dialog" aria-modal="true" aria-label="Rohi form">
+  <div class="pop">
+    <button class="x" type="button" data-close aria-label="Close">&times;</button>
+    <div class="tabs" role="tablist">
+      <button class="tab" id="tb-enrol" role="tab" type="button"></button>
+      <button class="tab" id="tb-teach" role="tab" type="button"></button>
+    </div>
+    <form id="form" novalidate>
+      <div class="fg" id="fields"></div>
+      <div class="cta"><button class="btn p" type="submit" id="sub"></button></div>
+    </form>
+    <div id="out"></div>
+  </div>
+</div>
+<div class="modal" id="amodal" hidden role="dialog" aria-modal="true" aria-label="Admission guide">
+  <div class="pop"><button class="x" type="button" data-close aria-label="Close">&times;</button><div id="am"></div></div>
+</div>
+<div class="modal" id="dmodal" hidden role="dialog" aria-modal="true" aria-label="Department">
+  <div class="pop"><button class="x" type="button" data-close aria-label="Close">&times;</button><div id="dm"></div></div>
+</div>
+<div class="modal" id="lmodal" hidden role="dialog" aria-modal="true" aria-label="Photo"><div class="pop lb"><button class="x" type="button" data-close aria-label="Close">&times;</button><img id="lbimg" alt=""><p id="lbcap"></p></div></div>
+<button id="top" aria-label="Top">&#8593;</button>
+
+<script>
+(function(){
+var WA="237673140285", MAIL="awinohfidelis@gmail.com", PHONE="+237673140285";
+var lang="en";
+try{var sl=localStorage.getItem("rohi-lang"); if(sl==="fr"||sl==="en") lang=sl;}catch(e){}
+function $(s,r){return (r||document).querySelector(s);}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+/* ---------- icons ---------- */
+var IC={
+flask:'<path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7.5 14h9"/>',
+palette:'<path d="M12 3a9 9 0 1 0 0 18c1.6 0 2.2-1.1 1.7-2.3-.5-1.2.2-2.2 1.6-2.2H18a3 3 0 0 0 3-3C21 7 17 3 12 3z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="10" r="1"/>',
+chart:'<path d="M4 20V11M10 20V5M16 20v-7M22 20H2"/>',
+gear:'<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
+building:'<path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/>',
+globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+pin:'<path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+users:'<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 1.8 4 4"/>',
+award:'<circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 21l5-3 5 3-1.5-6.5"/>',
+shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m8.5 12 2.5 2.5L16 9.5"/>',
+target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+compass:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+cap:'<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/>',
+play:'<circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5z"/>',
+mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+phone:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+wa:'<path d="M3 21l1.6-5A9 9 0 1 1 8 19.4z"/><path d="M9 9c0 3 3 6 6 6l1.5-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/>',
+caret:'<path d="m6 9 6 6 6-6"/>',
+laurel:'<path d="M12 4l2.3 4.7 5.2.7-3.8 3.7.9 5.2L12 15.8 7.4 18.3l.9-5.2L4.5 9.4l5.2-.7z"/>'
+};
+function ic(n){return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">'+IC[n]+'</svg>';}
+
+/* ---------- strings ---------- */
+var I={
+en:{
+ home:"Home",about:"About Us",depts:"Departments",campuses:"Our Campuses",apply:"Apply",gallery:"Gallery",contact:"Contact",pill:"Excellence · Discipline · Success",
+ wel:"Welcome to Rohi Bilingual Comprehensive High School",h1a:"Building a Brighter",h1b:"Future Together",
+ t1:"Quality education",t2:"Bilingual learning",t3:"Holistic development",
+ hp:"At Rohi Bilingual Comprehensive High School, we nurture future leaders through excellence, discipline and innovation. Join a school that believes in your potential!",
+ c1:"Explore Our Departments",c2:"Read Our Story",lga:"Learn Grow Achieve",
+ abh:"About Rohi",abs:"Our Story",
+ ab1:"Rohi Bilingual Comprehensive High School was founded in 2015 with a strong vision: to provide quality, bilingual and holistic education to young people in Cameroon and beyond. What started as a dream has grown into a reputable institution known for academic excellence, discipline and character building.",
+ ab2:"From humble beginnings to a thriving school with two campuses (Loum and Tombel), Rohi continues to impact lives by preparing students for higher education, professional careers and leadership roles in their communities and the world.",
+ more:"Learn More About Us",less:"Show Less",since:"Since 2015",yoe:"Years of Excellence",
+ s1:"Founded",s1b:"2015",s2:"Bilingual Education",s2b:"English & French",s3:"Two Campuses",s3b:"Loum & Tombel",s4:"Holistic Development",s4b:"Academics · Values · Skills",
+ dh:"Our Departments",ds:"Choose Your Path, Build Your Future",view:"View",
+ wh:"What Our Ex-Students Say",ws:"Voices of Rohi Alumni",altag:"Ex-student, Rohi",alname1:"Awinoh Fidelis",alrole1:"Tech professional",alq1:"Rohi taught me that discipline is a skill you can build. My curiosity about computers, and teachers who kept pushing me to ask questions, grew into a career in technology. To every student starting out: your dream is not too big. Start small, stay consistent, keep learning.",alname2:"Rachel",alrole2:"Nurse",alq2:"At Rohi I learned to work hard and to care for others. That led me to nursing, where I comfort patients, celebrate recoveries and stand with families in hard moments. If you feel called to serve, trust that calling.",
+ w1:"Experienced & Dedicated Teachers",w2:"Modern Labs & Well-Equipped Facilities",w3:"Safe & Conducive Learning Environment",w4:"Bilingual Education (English & French)",w5:"Strong Discipline & Values",w6:"Career Guidance & Support",
+ prom:"Our promise: we nurture future leaders through excellence, discipline and innovation.",promb:"Rohi Bilingual Comprehensive High School",
+ ch:"Our Campuses",cs:"Two Locations, Same Excellence",vmap:"View on Map",gd:"Get Directions",chd:"Choose your destination:",ogm:"Open in Google Maps",tb:"Two branches One vision",
+ gh:"Gallery",gs:"Life at Rohi",gmore:"See more photos",gless:"Show fewer photos",ghu:"Our uniform",ucap:"A Rohi student in the school uniform, Loum",ucapb:"A Rohi boy in the school uniform in front of the school, Loum",ug:"Girls",ub:"Boys",
+ ah:"Apply Now",as:"Join Our Team or Enroll Your Child",
+ tf:"Teacher Application Form",tfp:"Interested in teaching at Rohi? Fill in the form and we'll get in touch with you.",tfb:"Apply as Teacher",
+ agd:"Admission Guide",gdp:"See what to bring for your department and the fees before you come to the campus. Enrol online, pay at the campus.",gdb:"View Admission Guide",sf:"Student Enrollment Form",sfp:"Give your child the best start. Fill in the form to begin the enrolment process.",sfb:"Enroll Now",
+ git:"Get in Touch",wam:"Chat on WhatsApp",fut:"Your Future Starts Here",copy:"Copy",
+ rights:"© 2015 – 2026 Rohi Bilingual Comprehensive High School. All rights reserved.",loum:"Loum",tombel:"Tombel",cam:"Cameroon",
+ tit:"Student enrolment",tit2:"Teacher application",
+ why1:"Why students join",off1:"What Rohi offers",car1:"Careers",tr:"Technical trades"},
+fr:{
+ home:"Accueil",about:"À propos",depts:"Départements",campuses:"Nos campus",apply:"Postuler",gallery:"Galerie",contact:"Contact",pill:"Excellence · Discipline · Réussite",
+ wel:"Bienvenue au Collège Bilingue d'Enseignement Général Rohi",h1a:"Bâtir un avenir plus",h1b:"brillant, ensemble",
+ t1:"Éducation de qualité",t2:"Apprentissage bilingue",t3:"Développement global",
+ hp:"Au Collège Bilingue d'Enseignement Général Rohi, nous formons les futurs leaders par l'excellence, la discipline et l'innovation. Rejoignez une école qui croit en votre potentiel !",
+ c1:"Découvrir nos départements",c2:"Lire notre histoire",lga:"Apprendre Grandir Réussir",
+ abh:"À propos de Rohi",abs:"Notre histoire",
+ ab1:"Le Collège Bilingue d'Enseignement Général Rohi a été fondé en 2015 avec une vision forte : offrir une éducation de qualité, bilingue et globale aux jeunes du Cameroun et d'ailleurs. Ce qui était un rêve est devenu une institution réputée pour son excellence académique, sa discipline et la formation du caractère.",
+ ab2:"De modestes débuts à une école florissante sur deux campus (Loum et Tombel), Rohi continue de changer des vies en préparant les élèves aux études supérieures, aux carrières professionnelles et au leadership dans leurs communautés et dans le monde.",
+ more:"En savoir plus",less:"Voir moins",since:"Depuis 2015",yoe:"Années d'excellence",
+ s1:"Fondée en",s1b:"2015",s2:"Éducation bilingue",s2b:"Anglais & Français",s3:"Deux campus",s3b:"Loum & Tombel",s4:"Développement global",s4b:"Savoirs · Valeurs · Compétences",
+ dh:"Nos départements",ds:"Choisissez votre voie, bâtissez votre avenir",view:"Voir",
+ wh:"Ce que disent nos anciens élèves",ws:"La voix des anciens de Rohi",altag:"Ancien élève, Rohi",alname1:"Awinoh Fidelis",alrole1:"Professionnel de la technologie",alq1:"Rohi m'a appris que la discipline se construit. Ma curiosité pour les ordinateurs, et des enseignants qui m'ont poussé à poser des questions, sont devenues une carrière dans la technologie. À chaque élève qui commence : votre rêve n'est pas trop grand. Commencez petit, restez constant, continuez d'apprendre.",alname2:"Rachel",alrole2:"Infirmière",alq2:"À Rohi, j'ai appris à travailler dur et à prendre soin des autres. Cela m'a menée aux soins infirmiers, où je réconforte les patients, je célèbre les guérisons et je soutiens les familles dans les moments difficiles. Si vous vous sentez appelé à servir, faites confiance à cet appel.",
+ w1:"Enseignants expérimentés et dévoués",w2:"Laboratoires modernes et équipements complets",w3:"Cadre d'apprentissage sûr et propice",w4:"Éducation bilingue (anglais et français)",w5:"Discipline et valeurs solides",w6:"Orientation et accompagnement de carrière",
+ prom:"Notre promesse : former les futurs leaders par l'excellence, la discipline et l'innovation.",promb:"Collège Bilingue d'Enseignement Général Rohi",
+ ch:"Nos campus",cs:"Deux lieux, la même excellence",vmap:"Voir sur la carte",gd:"Itinéraire",chd:"Choisissez votre destination :",ogm:"Ouvrir dans Google Maps",tb:"Deux campus Une vision",
+ gh:"Galerie",gs:"La vie à Rohi",gmore:"Voir plus de photos",gless:"Voir moins de photos",ghu:"Notre uniforme",ucap:"Une élève de Rohi en uniforme, Loum",ucapb:"Un élève de Rohi en uniforme devant l'école, Loum",ug:"Filles",ub:"Garçons",
+ ah:"Postulez maintenant",as:"Rejoignez notre équipe ou inscrivez votre enfant",
+ tf:"Formulaire de candidature enseignant",tfp:"Vous voulez enseigner à Rohi ? Remplissez le formulaire et nous vous contacterons.",tfb:"Postuler comme enseignant",
+ agd:"Guide d'admission",gdp:"Découvrez ce qu'il faut apporter selon votre département et les frais avant de venir au campus. Inscrivez-vous en ligne, payez au campus.",gdb:"Voir le guide d'admission",sf:"Formulaire d'inscription élève",sfp:"Offrez à votre enfant le meilleur départ. Remplissez le formulaire pour commencer l'inscription.",sfb:"Inscrire maintenant",
+ git:"Nous contacter",wam:"Écrire sur WhatsApp",fut:"Votre avenir commence ici",copy:"Copier",
+ rights:"© 2015 – 2026 Collège Bilingue d'Enseignement Général Rohi. Tous droits réservés.",loum:"Loum",tombel:"Tombel",cam:"Cameroun",
+ tit:"Inscription d'un élève",tit2:"Candidature d'enseignant",
+ why1:"Pourquoi les élèves rejoignent",off1:"Ce que Rohi offre",car1:"Carrières",tr:"Métiers techniques"}
+};
+function t(k){return I[lang][k];}
+
+/* ---------- data ---------- */
+var TL={en:[
+["2015","Rohi opens its doors in Loum with a small team of teachers, a handful of classrooms and families who trusted a new idea."],
+["The early years","Word spreads. Parents notice the discipline, the bilingual teaching and teachers who know every student by name."],
+["Growing departments","Science, Arts and Commercial classes grow, and a Technical department with real workshops opens for students who learn by doing."],
+["A second home in Tombel","Rohi opens a campus in Tombel so more families can get the same quality of education closer to home."],
+["Today","One school family on two campuses, preparing students for exams, university, trades and business."]],
+fr:[
+["2015","Rohi ouvre ses portes à Loum avec une petite équipe d'enseignants, quelques salles et des familles qui ont cru en une idée nouvelle."],
+["Les premières années","Le bouche-à-oreille fait son œuvre. Les parents remarquent la discipline, l'enseignement bilingue et des enseignants qui connaissent chaque élève."],
+["Des départements qui grandissent","Les classes de Sciences, Lettres et Commerce se développent, et un département Technique avec de vrais ateliers ouvre pour ceux qui apprennent en faisant."],
+["Une seconde maison à Tombel","Rohi ouvre un campus à Tombel pour offrir la même qualité d'enseignement plus près des familles."],
+["Aujourd'hui","Une famille scolaire sur deux campus, qui prépare aux examens, à l'université, aux métiers et aux affaires."]]};
+
+var SHORT={en:["Electrical","Electronics","Mechanical","Civil & Building","Carpentry","Plumbing","Welding","Auto Mechanics","Refrigeration & AC","Fashion","ICT"],fr:["Électrotechnique","Électronique","Mécanique","Génie civil","Menuiserie","Plomberie","Soudure","Méca. auto","Froid & clim.","Couture","Informatique"]};
+var D=[
+{id:"sci",ic:"flask",n:{en:"Science",fr:"Sciences"},sub:{en:"Explore · Discover · Innovate",fr:"Explorer · Découvrir · Innover"},
+ ds:{en:"Our Science department offers a modern laboratory environment with practical learning in Physics, Chemistry, Biology and Mathematics.",fr:"Notre département de Sciences offre un environnement de laboratoire moderne avec un apprentissage pratique en physique, chimie, biologie et mathématiques."},
+ tag:{en:"For future doctors, engineers and researchers.",fr:"Pour les futurs médecins, ingénieurs et chercheurs."},
+ why:{en:["You love asking how and why things work","You want medicine, pharmacy, engineering or technology","You like experiments you can see with your own eyes"],fr:["Vous aimez comprendre comment et pourquoi","Vous visez la médecine, la pharmacie, l'ingénierie ou la technologie","Vous aimez les expériences que l'on voit de ses yeux"]},
+ off:{en:["Equipped laboratories for physics, chemistry and biology","Computer room for practical ICT lessons","Mathematics and science exam preparation","Small groups and practical work every week"],fr:["Laboratoires équipés de physique, chimie et biologie","Salle informatique pour des cours pratiques","Préparation aux examens de mathématiques et de sciences","Petits groupes et travaux pratiques chaque semaine"]},
+ car:{en:["Doctor","Pharmacist","Nurse","Engineer","Lab scientist","Agronomist","Software developer"],fr:["Médecin","Pharmacien","Infirmier","Ingénieur","Biologiste","Agronome","Développeur"]}},
+{id:"art",ic:"palette",n:{en:"Arts",fr:"Lettres et Arts"},sub:{en:"Express · Create · Inspire",fr:"Exprimer · Créer · Inspirer"},
+ ds:{en:"Grow your voice in Literature, History, Geography, Languages and Fine Arts. Our Arts department helps you find your unique voice.",fr:"Faites grandir votre voix en littérature, histoire, géographie, langues et beaux-arts. Notre département Lettres vous aide à trouver votre voix."},
+ tag:{en:"For storytellers, thinkers and leaders.",fr:"Pour les conteurs, les penseurs et les leaders."},
+ why:{en:["You enjoy reading, writing and debating","You want law, media, teaching or diplomacy","You care about people, culture and society"],fr:["Vous aimez lire, écrire et débattre","Vous visez le droit, les médias, l'enseignement ou la diplomatie","Vous vous intéressez aux gens, à la culture et à la société"]},
+ off:{en:["Strong literature, history and geography teaching","English and French language practice","Debate, drama and public speaking clubs","Guidance for university and public-service careers"],fr:["Enseignement solide de littérature, d'histoire et de géographie","Pratique de l'anglais et du français","Clubs de débat, de théâtre et d'expression orale","Orientation vers l'université et la fonction publique"]},
+ car:{en:["Lawyer","Journalist","Teacher","Diplomat","Translator","Graphic designer","Social worker"],fr:["Avocat","Journaliste","Enseignant","Diplomate","Traducteur","Graphiste","Assistant social"]}},
+{id:"com",ic:"chart",n:{en:"Commercial",fr:"Commercial"},sub:{en:"Manage · Organize · Succeed",fr:"Gérer · Organiser · Réussir"},
+ ds:{en:"Build your business and management skills with Accounting, Business Management, Economics and Office Practice.",fr:"Développez vos compétences en gestion et en affaires avec la comptabilité, la gestion d'entreprise, l'économie et les techniques de bureau."},
+ tag:{en:"For future business owners and finance experts.",fr:"Pour les futurs chefs d'entreprise et experts en finance."},
+ why:{en:["You like numbers, trade and organising things","You dream of running your own business","You want a job in a bank, firm or office"],fr:["Vous aimez les chiffres, le commerce et l'organisation","Vous rêvez de créer votre entreprise","Vous visez une banque, un cabinet ou un bureau"]},
+ off:{en:["Accounting, commerce and economics with real case work","Office practice and computer skills","Business-plan and entrepreneurship projects","Preparation for professional accounting exams"],fr:["Comptabilité, commerce et économie avec des cas réels","Techniques de bureau et informatique","Projets de plan d'affaires et d'entrepreneuriat","Préparation aux examens professionnels de comptabilité"]},
+ car:{en:["Accountant","Banker","Entrepreneur","Auditor","Marketer","Office manager","Economist"],fr:["Comptable","Banquier","Entrepreneur","Auditeur","Spécialiste marketing","Gestionnaire de bureau","Économiste"]}},
+{id:"tec",ic:"gear",n:{en:"Technical",fr:"Technique"},sub:{en:"Learn · Build · Create",fr:"Apprendre · Construire · Créer"},
+ ds:{en:"Our Technical department provides hands-on training in multiple fields:",fr:"Notre département Technique offre une formation pratique dans plusieurs domaines :"},
+ tag:{en:"For makers, builders and problem solvers.",fr:"Pour les bâtisseurs et les résolveurs de problèmes."},
+ why:{en:["You prefer building and fixing to only reading","You want a skill that earns a living early","You may want to open your own workshop"],fr:["Vous préférez construire et réparer plutôt que seulement lire","Vous voulez un métier qui rapporte tôt","Vous voulez peut-être ouvrir votre atelier"]},
+ off:{en:["Eleven trades, each with its own workshop practice","Safety training and proper tools","Theory classes and drawing alongside practice","Paths to technical certificates and to engineering studies"],fr:["Onze métiers, chacun avec sa pratique en atelier","Formation à la sécurité et vrais outils","Cours théoriques et dessin en plus de la pratique","Voies vers les diplômes techniques et les études d'ingénieur"]},
+ car:{en:["Electrician","Mechanic","Civil technician","Carpenter","Plumber","Welder","Fashion designer"],fr:["Électricien","Mécanicien","Technicien du bâtiment","Menuisier","Plombier","Soudeur","Styliste"]}}
+];
+var TECH=[
+["ELEC",{en:"Electrical Engineering",fr:"Électrotechnique"},{en:"Wiring, motors, solar and power installation.",fr:"Câblage, moteurs, solaire et installations électriques."},{en:"Electrician, solar installer",fr:"Électricien, installateur solaire"}],
+["ELTN",{en:"Electronics",fr:"Électronique"},{en:"Circuits, repairs of phones, TVs and control systems.",fr:"Circuits, réparation de téléphones, téléviseurs et automatismes."},{en:"Electronics technician",fr:"Technicien en électronique"}],
+["MECH",{en:"Mechanical Engineering",fr:"Construction mécanique"},{en:"Machines, lathes, drawing and machine maintenance.",fr:"Machines, tournage, dessin et maintenance."},{en:"Machinist, maintenance technician",fr:"Usineur, technicien de maintenance"}],
+["CIVL",{en:"Civil Engineering and Building",fr:"Génie civil et bâtiment"},{en:"Masonry, site drawing, concrete and surveying basics.",fr:"Maçonnerie, dessin de chantier, béton et topographie."},{en:"Site supervisor, draughtsman",fr:"Chef de chantier, dessinateur"}],
+["CARP",{en:"Carpentry and Joinery",fr:"Menuiserie et ébénisterie"},{en:"Furniture, doors, roofs and wood finishing.",fr:"Meubles, portes, charpentes et finitions du bois."},{en:"Carpenter, furniture maker",fr:"Menuisier, fabricant de meubles"}],
+["PLMB",{en:"Plumbing",fr:"Plomberie"},{en:"Water supply, drainage, pipes and sanitary fitting.",fr:"Alimentation en eau, évacuation, tuyauterie et sanitaires."},{en:"Plumber, water-system installer",fr:"Plombier, installateur de réseaux d'eau"}],
+["WELD",{en:"Welding and Metal Fabrication",fr:"Soudure et chaudronnerie"},{en:"Arc welding, gates, frames and metal structures.",fr:"Soudure à l'arc, portails, charpentes et structures métalliques."},{en:"Welder, metal fabricator",fr:"Soudeur, chaudronnier"}],
+["AUTO",{en:"Auto Mechanics",fr:"Mécanique automobile"},{en:"Engines, brakes, diagnosis and vehicle servicing.",fr:"Moteurs, freins, diagnostic et entretien des véhicules."},{en:"Auto mechanic, garage owner",fr:"Mécanicien auto, garagiste"}],
+["COOL",{en:"Refrigeration and Air Conditioning",fr:"Froid et climatisation"},{en:"Cooling systems, fridges, split units and repairs.",fr:"Systèmes de froid, réfrigérateurs, climatiseurs et réparations."},{en:"Cooling technician",fr:"Technicien frigoriste"}],
+["FASH",{en:"Fashion and Dressmaking",fr:"Couture et mode"},{en:"Pattern cutting, sewing, design and tailoring.",fr:"Patronage, couture, création et confection."},{en:"Fashion designer, tailor",fr:"Styliste, tailleur"}],
+["ICT",{en:"ICT and Computer Maintenance",fr:"Informatique et maintenance"},{en:"Computer repair, networks, office software and basic coding.",fr:"Dépannage, réseaux, bureautique et bases de programmation."},{en:"IT support, network technician",fr:"Support informatique, technicien réseau"}]
+];
+var UNI={en:{g:[["White short-sleeve shirt with school crest","#ffffff"],["Royal-blue skirt","#1f55e0"],["White socks","#ffffff"],["Black shoes","#111111"]],b:[["White short-sleeve shirt with school crest","#ffffff"],["Royal-blue long trousers","#1f55e0"],["Black leather belt","#222222"],["Black polished shoes","#111111"]]},
+fr:{g:[["Chemise blanche à manches courtes avec écusson","#ffffff"],["Jupe bleu roi","#1f55e0"],["Chaussettes blanches","#ffffff"],["Chaussures noires","#111111"]],b:[["Chemise blanche à manches courtes avec écusson","#ffffff"],["Pantalon long bleu roi","#1f55e0"],["Ceinture en cuir noire","#222222"],["Chaussures noires cirées","#111111"]]}};
+var CAMP=[
+{n:{en:"Rohi Loum",fr:"Rohi Loum"},short:{en:"Loum",fr:"Loum"},q:"Rohi Bilingual Comprehensive High School Loum",dest:"Rohi Bilingual Comprehensive High School, Loum, Cameroon",sub:{en:"Loum, Cameroon",fr:"Loum, Cameroun"}},
+{n:{en:"Rohi Tombel",fr:"Rohi Tombel"},short:{en:"Tombel",fr:"Tombel"},q:"Rohi Bilingual Comprehensive High School Tombel",dest:"Rohi Bilingual Comprehensive High School, Tombel, Cameroon",sub:{en:"Tombel, Cameroon",fr:"Tombel, Cameroun"}}
+];
+
+/* ---------- scenes ---------- */
+function gear(cx,cy,r,col){return '<g><circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+col+'" stroke-width="'+(r*.34)+'" stroke-dasharray="'+(r*.42)+' '+(r*.3)+'"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.78)+'" fill="'+col+'"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.3)+'" fill="#f1faee"/></g>';}
+var SC={
+sci:'<rect width="400" height="300" fill="#d6f5da"/><circle cx="330" cy="60" r="90" fill="#9be3a8"/><rect y="236" width="400" height="64" fill="#2e8b57"/>'+
+ '<g transform="translate(70 70)"><path d="M40 0h30v50l40 90q8 20-12 20H12q-20 0-12-20l40-90z" fill="#fff" stroke="#123824" stroke-width="4" stroke-linejoin="round"/><path d="M26 118h58l26 38q4 6-4 6H4q-8 0-4-6z" fill="#52bb6d"/><circle cx="56" cy="104" r="6" fill="#9be3a8"/><circle cx="72" cy="84" r="4" fill="#9be3a8"/></g>'+
+ '<g transform="translate(240 120)"><ellipse cx="70" cy="30" rx="70" ry="24" fill="none" stroke="#123824" stroke-width="3"/><ellipse cx="70" cy="30" rx="70" ry="24" fill="none" stroke="#123824" stroke-width="3" transform="rotate(60 70 30)"/><ellipse cx="70" cy="30" rx="70" ry="24" fill="none" stroke="#123824" stroke-width="3" transform="rotate(-60 70 30)"/><circle cx="70" cy="30" r="12" fill="#ffd36b" stroke="#123824" stroke-width="3"/></g>'+
+ '<g transform="translate(190 150)"><rect x="0" y="70" width="70" height="14" rx="4" fill="#123824"/><rect x="26" y="20" width="14" height="52" fill="#123824"/><rect x="8" y="0" width="52" height="22" rx="10" fill="#8fcdf0" stroke="#123824" stroke-width="4" transform="rotate(-24 34 11)"/></g>',
+art:'<rect width="400" height="300" fill="#ece6ff"/><circle cx="70" cy="70" r="80" fill="#b7a3ff"/><rect y="244" width="400" height="56" fill="#2e8b57"/>'+
+ '<g transform="translate(60 80)"><path d="M0 70q60-60 120-10q0 70-60 90T0 70z" fill="#fff" stroke="#123824" stroke-width="4"/><circle cx="40" cy="64" r="11" fill="#e86a5b"/><circle cx="70" cy="48" r="11" fill="#ffd36b"/><circle cx="98" cy="72" r="11" fill="#52bb6d"/><circle cx="60" cy="104" r="11" fill="#8fcdf0"/><circle cx="92" cy="112" r="14" fill="#ece6ff" stroke="#123824" stroke-width="3"/></g>'+
+ '<g transform="translate(230 110)"><path d="M0 20q50-16 80 6v110q-30-22-80-6z" fill="#fff" stroke="#123824" stroke-width="4" stroke-linejoin="round"/><path d="M160 20q-50-16-80 6v110q30-22 80-6z" fill="#f4fbf2" stroke="#123824" stroke-width="4" stroke-linejoin="round"/><path d="M14 52q30-8 52 4M14 74q30-8 52 4M94 56q22-8 52-4M94 78q22-8 52-4" stroke="#9be3a8" stroke-width="5" fill="none" stroke-linecap="round"/></g>'+
+ '<g transform="translate(160 40) rotate(28)"><rect width="16" height="110" rx="4" fill="#ffd36b" stroke="#123824" stroke-width="3"/><path d="M0 110h16l-8 22z" fill="#f2c4a0" stroke="#123824" stroke-width="3"/></g>',
+com:'<rect width="400" height="300" fill="#fff3c9"/><circle cx="330" cy="70" r="90" fill="#ffd23f"/><rect y="244" width="400" height="56" fill="#2e8b57"/>'+
+ '<g transform="translate(50 70)"><rect x="0" y="100" width="40" height="80" rx="6" fill="#52bb6d" stroke="#123824" stroke-width="3"/><rect x="56" y="60" width="40" height="120" rx="6" fill="#8fcdf0" stroke="#123824" stroke-width="3"/><rect x="112" y="20" width="40" height="160" rx="6" fill="#9be3a8" stroke="#123824" stroke-width="3"/><path d="M0 70L56 40l56-20 52-28" fill="none" stroke="#123824" stroke-width="4" stroke-linecap="round"/><path d="M146 -4l22 4-10 20z" fill="#123824"/></g>'+
+ '<g transform="translate(250 100)"><rect width="100" height="130" rx="14" fill="#fff" stroke="#123824" stroke-width="4"/><rect x="12" y="14" width="76" height="30" rx="6" fill="#d6f5da" stroke="#123824" stroke-width="3"/><g fill="#123824"><circle cx="26" cy="68" r="7"/><circle cx="50" cy="68" r="7"/><circle cx="74" cy="68" r="7"/><circle cx="26" cy="92" r="7"/><circle cx="50" cy="92" r="7"/><circle cx="74" cy="92" r="7"/><circle cx="26" cy="114" r="7"/><circle cx="50" cy="114" r="7"/></g><circle cx="74" cy="114" r="7" fill="#52bb6d"/></g>'+
+ '<g transform="translate(216 196)"><ellipse cx="22" cy="40" rx="22" ry="8" fill="#ffd36b" stroke="#123824" stroke-width="3"/><ellipse cx="22" cy="28" rx="22" ry="8" fill="#ffd36b" stroke="#123824" stroke-width="3"/><ellipse cx="22" cy="16" rx="22" ry="8" fill="#ffe08f" stroke="#123824" stroke-width="3"/></g>',
+tec:'<rect width="400" height="300" fill="#d6f0fd"/><circle cx="70" cy="240" r="110" fill="#8fcdf0"/><rect y="250" width="400" height="50" fill="#2e8b57"/>'+
+ gear(110,120,62,"#087443")+gear(206,76,38,"#52bb6d")+
+ '<g transform="translate(250 100) rotate(40 40 80)"><rect x="34" y="40" width="14" height="130" rx="6" fill="#8fcdf0" stroke="#123824" stroke-width="4"/><path d="M12 8a30 30 0 0 1 28 22l6 18H20l-8-14a18 18 0 0 1 0-26z" fill="#fff" stroke="#123824" stroke-width="4" stroke-linejoin="round"/><path d="M82 8a30 30 0 0 0-28 22l-6 18h26l8-14a18 18 0 0 0 0-26z" fill="#fff" stroke="#123824" stroke-width="4" stroke-linejoin="round"/></g>'+
+ '<path d="M338 40l-30 70h26l-18 66 54-84h-28l22-52z" fill="#ffd23f" stroke="#123824" stroke-width="4" stroke-linejoin="round"/>'+
+ '<g transform="translate(180 170)"><path d="M0 60a60 52 0 0 1 120 0z" fill="#ffd23f" stroke="#123824" stroke-width="4"/><rect x="-10" y="58" width="140" height="14" rx="6" fill="#ffd23f" stroke="#123824" stroke-width="4"/><rect x="50" y="2" width="20" height="30" fill="#f2c75c" stroke="#123824" stroke-width="3"/></g>'
+};
+function scene(id,label){return '<img src="images/dept-'+id+'.jpg" alt="'+esc(label)+'" loading="lazy" width="1000" height="'+(id==="art"?667:563)+'">';}
+
+/* ---------- render ---------- */
+var curCamp=0, mode="enrol", story=false, galOpen=false;
+function rHeader(){
+  var dm=D.map(function(d,i){return '<a data-dept="'+i+'">'+esc(d.n[lang])+'</a>';}).join("");
+  var cm=CAMP.map(function(c,i){return '<a href="#campus" data-camp="'+i+'">'+esc(c.short[lang])+'</a>';}).join("");
+  $("#nav").innerHTML=
+   '<a href="#home" class="on">'+t("home")+'</a><a href="#about">'+t("about")+'</a>'+
+   '<div class="dd"><button type="button" aria-haspopup="true">'+t("depts")+ic("caret")+'</button><div class="menu">'+dm+'</div></div>'+
+   '<div class="dd"><button type="button" aria-haspopup="true">'+t("campuses")+ic("caret")+'</button><div class="menu">'+cm+'</div></div>'+
+   '<div class="dd"><button type="button" aria-haspopup="true">'+t("apply")+ic("caret")+'</button><div class="menu"><a data-form="teach">'+t("tit2")+'</a><a data-form="enrol">'+t("tit")+'</a><a data-guide>'+t("agd")+'</a></div></div>'+
+   '<a href="#gallery">'+t("gallery")+'</a><a href="#contact">'+t("contact")+'</a>'+
+   '<button class="lang" id="lang" type="button" aria-label="Language">'+(lang==="en"?"FR":"EN")+'</button>';
+  $("#pill").innerHTML=ic("cap")+t("pill");
+}
+function rHero(){
+  $("#heroin").innerHTML='<div class="hgrid"><div class="rv in"><span class="wel">'+t("wel")+'</span>'+
+   '<h1>'+t("h1a")+'<span class="script">'+t("h1b")+'</span></h1>'+
+   '<div class="tags"><span>'+t("t1")+'</span><span>'+t("t2")+'</span><span>'+t("t3")+'</span></div>'+
+   '<div class="cta"><a class="btn p" href="#depts">'+t("c1")+ic("arrow")+'</a><a class="btn g" href="#about" id="story-btn">'+ic("play")+t("c2")+'</a><button class="btn g" type="button" data-guide>'+ic("cap")+t("agd")+'</button></div></div>'+
+   '</div>';
+  $("#heroimg").alt=lang==="fr"?"Élèves de Rohi en uniforme dans le laboratoire de sciences":"Rohi students in uniform working in the science laboratory";
+}
+function rAbout(){
+  var tl=TL[lang].map(function(r){return '<div class="tli"><div class="yr">'+esc(r[0])+'</div><p>'+esc(r[1])+'</p></div>';}).join("");
+  $("#aboutin").innerHTML='<div class="ab">'+
+   '<div class="abimg rv"><img src="images/campus-loum.jpg" width="1000" height="667" alt="'+esc(t("abh"))+'" loading="lazy"><div class="since"><svg class="i" viewBox="0 0 24 24">'+IC.laurel+'</svg><span><b>'+t("since")+'</b>'+t("yoe")+'</span></div></div>'+
+   '<div class="abt rv"><h2>'+t("abh")+'</h2><h3>'+t("abs")+'</h3><p>'+t("ab1")+'</p><p>'+t("ab2")+'</p><button class="btn p" type="button" id="more">'+t(story?"less":"more")+ic("arrow")+'</button></div>'+
+   '<div class="stats rv">'+
+    [["building","s1","s1b"],["globe","s2","s2b"],["pin","s3","s3b"],["users","s4","s4b"]].map(function(s){return '<div class="stat"><span class="ci">'+ic(s[0])+'</span><span><b>'+t(s[1])+'</b><small>'+t(s[2])+'</small></span></div>';}).join("")+'</div></div>'+
+   '<div class="tlw" id="tlw"'+(story?"":" hidden")+'><div class="tl">'+tl+'</div></div>';
+}
+function rDepts(){
+  $("#deptsin").innerHTML='<div class="sec-h rv"><h2>'+t("dh")+'</h2><p>'+t("ds")+'</p></div><div class="dg">'+
+  D.map(function(d,i){
+    var body=d.id==="tec"?'<p>'+esc(d.ds[lang])+'</p><ul class="trs">'+TECH.map(function(x,i){return "<li>"+esc(SHORT[lang][i])+"</li>";}).join("")+'</ul>':'<p>'+esc(d.ds[lang])+'</p>';
+    return '<article class="dc rv"><div class="dimg">'+scene(d.id,d.n[lang])+'</div><span class="badge">'+ic(d.ic)+'</span><div class="db"><h3>'+esc(d.n[lang])+'</h3><span class="sub">'+esc(d.sub[lang])+'</span>'+body+'<button class="btn p sm" type="button" data-dept="'+i+'">'+t("view")+" "+esc(d.n[lang])+ic("arrow")+'</button></div></article>';
+  }).join("")+'</div>';
+}
+function rWhy(){
+  var qm='<svg class="qm" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.5 6C6.5 7.2 4.5 9.8 4.5 13v5h6v-6h-3c0-1.8.9-3.1 2.7-3.9L9.5 6zm9 0c-3 1.2-5 3.8-5 7v5h6v-6h-3c0-1.8.9-3.1 2.7-3.9L18.5 6z"/></svg>';
+  var cards=[1,2].map(function(n){
+    var ph=n===1?'<img src="images/alumni-1.jpg" width="480" height="570" alt="'+esc(t("alname1"))+'" loading="lazy">':'<div class="av" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4" fill="currentColor"/><path fill="currentColor" d="M3.5 21c0-4.7 3.8-7.5 8.5-7.5s8.5 2.8 8.5 7.5z"/></svg></div>';
+    return '<figure class="tm rv"><div class="tph">'+ph+'</div><div class="tb">'+qm+'<blockquote>'+esc(t("alq"+n))+'</blockquote><figcaption><b>'+esc(t("alname"+n))+'</b><span>'+esc(t("alrole"+n))+'</span></figcaption></div></figure>';
+  }).join("");
+  $("#whyin").innerHTML='<div class="sec-h" style="margin-bottom:1.1rem"><h2 style="color:#fff">'+t("wh")+'</h2><p style="color:rgba(255,255,255,.88)">'+t("ws")+'</p></div><div class="tms">'+cards+'</div>';
+}
+function mapSvg(){
+  var sel=curCamp;
+  var a=sel===0?"#087443":"#2e8b57", b=sel===1?"#087443":"#2e8b57";
+  return '<svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="260" fill="#e4f3e6"/>'+
+  '<path d="M-10 190C60 160 100 220 190 190S330 120 410 150V270H-10z" fill="#bfe3f5" opacity=".7"/>'+
+  '<path d="M-10 60L410 90" stroke="#fff" stroke-width="9"/><path d="M130 -10L170 270" stroke="#fff" stroke-width="8"/><path d="M280 -10L240 270" stroke="#fff" stroke-width="6"/><path d="M-10 120L410 200" stroke="#fff" stroke-width="5"/>'+
+  '<rect x="20" y="20" width="60" height="30" rx="6" fill="#cfe9d1"/><rect x="200" y="20" width="70" height="40" rx="6" fill="#cfe9d1"/><rect x="300" y="170" width="70" height="40" rx="6" fill="#cfe9d1"/>'+
+  '<path d="M70 95C110 115 150 95 180 125S250 145 320 165" fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 9"/>'+
+  '<path d="M70 95C110 115 150 95 180 125S250 145 320 165" fill="none" stroke="#3b82f6" stroke-width="3" opacity=".55"/>'+
+  pin(70,95,a,sel===0,CAMP[0].n[lang])+pin(320,165,b,sel===1,CAMP[1].n[lang])+'</svg>';
+}
+function pin(x,y,col,on,label){
+  var w=label.length*6.4+16;
+  return '<g transform="translate('+x+' '+y+')">'+(on?'<circle class="pulse" r="12" fill="'+col+'"/>':'')+'<path d="M0 6C-12-8 -12-26 0-26S12-8 0 6z" fill="'+col+'" transform="translate(0 4)"/><circle cy="-18" r="4.5" fill="#fff"/>'+
+   '<rect x="'+(-w/2)+'" y="12" width="'+w+'" height="18" rx="9" fill="#fff" stroke="#d6ebdc"/><text y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#123824" font-family="Outfit,sans-serif">'+esc(label)+'</text></g>';
+}
+function roadSvg(){
+  return '<svg viewBox="0 0 300 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc4f2"/><stop offset="1" stop-color="#d9f1ff"/></linearGradient></defs>'+
+  '<rect width="300" height="260" fill="url(#sk)"/><circle cx="240" cy="50" r="22" fill="#fff6c8"/>'+
+  '<path d="M0 150L60 90l50 50 50-70 70 80 70-50v110H0z" fill="#6fb88a"/><path d="M0 180Q80 120 160 170T300 150v110H0z" fill="#3f9d5f"/>'+
+  '<path d="M120 260L148 160H156L196 260z" fill="#5b5f63"/><path d="M152 250V230M153 215V198M154 188V174" stroke="#fff" stroke-width="3" stroke-dasharray="8 8"/>'+
+  '<circle cx="40" cy="200" r="16" fill="#2f8a47"/><circle cx="260" cy="205" r="18" fill="#2f8a47"/></svg>';
+}
+function rCampus(){
+  var cards=CAMP.map(function(c,i){
+    return '<div class="cc'+(i===curCamp?" on":"")+'" data-camp="'+i+'">'+(i===0?'<img class="cimg" src="images/campus-loum.jpg" width="1000" height="667" alt="'+esc(c.n[lang])+'" loading="lazy">':'')+'<div class="t">'+ic("pin")+esc(c.n[lang])+'</div><small>'+esc(c.sub[lang])+'</small>'+
+    '<a class="btn p sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(c.q)+'">'+t("vmap")+ic("arrow")+'</a></div>';
+  }).join("");
+  var dir="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination="+encodeURIComponent(CAMP[curCamp].dest);
+  $("#campusin").innerHTML='<div class="sec-h rv"><h2>'+t("ch")+'</h2><p>'+t("cs")+'</p></div><div class="cg"><div class="cl">'+cards+'</div>'+
+   '<div class="gd"><b>'+t("gd")+'</b><small>'+t("chd")+'</small><div class="dest">'+CAMP.map(function(c,i){return '<button type="button" data-camp="'+i+'" aria-pressed="'+(i===curCamp)+'">'+esc(c.short[lang])+'</button>';}).join("")+'</div><a class="btn p sm" target="_blank" rel="noopener" href="'+dir+'" id="gmaps">'+t("ogm")+'</a></div>'+
+   '</div>';
+}
+function rGallery(){
+  function li(a){return a.map(function(x){return '<li><span class="sw" style="background:'+x[1]+'"></span>'+esc(x[0])+'</li>';}).join("");}
+  var u=UNI[lang];
+  var PH=[["images/gal-1.jpg",{en:"Rohi students on parade, Loum",fr:"Élèves de Rohi en défilé, Loum"},1100,827],["images/gal-2.jpg",{en:"Science practical work",fr:"Travaux pratiques de sciences"},715,536],["images/gal-3.jpg",{en:"Students and staff together",fr:"Élèves et personnel réunis"},1080,607],["images/gal-4.jpg",{en:"Students in the Rohi uniform",fr:"Élèves en uniforme Rohi"},810,1080],["images/gal-5.jpg",{en:"Our four departments: Science, Arts, Commercial and Technical",fr:"Nos quatre départements : Sciences, Lettres, Commercial et Technique"},1200,800]];
+  var photos='<div class="ph'+(galOpen?'':' collapsed')+'">'+PH.map(function(x,i){return '<button type="button" class="pi pi'+(i+1)+'" data-lb="'+i+'" aria-label="'+esc(x[1][lang])+'"><img src="'+x[0]+'" width="'+x[2]+'" height="'+x[3]+'" alt="'+esc(x[1][lang])+'" loading="lazy"><span>'+esc(x[1][lang])+'</span></button>';}).join("")+'</div>';
+  window.__PH=PH;
+  $("#galleryin").innerHTML='<div class="sec-h rv"><h2>'+t("gh")+'</h2><p>'+t("gs")+'</p></div>'+photos+'<div class="more-row"><button class="btn g" type="button" id="gmore" aria-expanded="'+galOpen+'">'+t(galOpen?"gless":"gmore")+'</button></div><div class="sec-h" style="margin-top:2.6rem"><h2 style="font-size:1.5rem">'+t("ghu")+'</h2></div><div class="ug">'+
+   '<div class="uc rv"><div class="pic photo"><img src="images/uniform-girl.jpg" width="853" height="1280" alt="'+esc(t("ucap"))+'" loading="lazy"></div><div><h3>'+t("ug")+'</h3><ul>'+li(u.g)+'</ul></div></div>'+
+   '<div class="uc rv"><div class="pic photo"><img src="images/uniform-boy.jpg" width="853" height="1280" alt="'+esc(t("ucapb"))+'" loading="lazy"></div><div><h3>'+t("ub")+'</h3><ul>'+li(u.b)+'</ul></div></div></div>'+
+   (galOpen?'<div class="gt"><figure><img src="images/campus-loum.jpg" width="1000" height="667" alt="'+esc(t("campuses"))+'" loading="lazy"><figcaption>'+t("campuses")+'</figcaption></figure>'+
+   D.map(function(d){return '<figure>'+scene(d.id,d.n[lang])+'<figcaption>'+esc(d.n[lang])+'</figcaption></figure>';}).join("")+'</div>':'');
+}
+function rApply(){
+  $("#applyin").innerHTML='<div class="ag"><div><h2>'+t("ah")+'</h2><p class="s">'+t("as")+'</p><div class="ac">'+
+   '<div class="ap"><span class="ci">'+ic("users")+'</span><div><h3>'+t("tf")+'</h3><p>'+t("tfp")+'</p><button class="btn p sm" type="button" data-form="teach">'+t("tfb")+ic("arrow")+'</button></div></div>'+
+   '<div class="ap"><span class="ci">'+ic("cap")+'</span><div><h3>'+t("sf")+'</h3><p>'+t("sfp")+'</p><button class="btn p sm" type="button" data-form="enrol">'+t("sfb")+ic("arrow")+'</button></div></div></div></div>'+
+   '<div class="git"><h3>'+t("git")+'</h3>'+
+   '<div class="r">'+ic("mail")+'<span>'+MAIL+'</span><button class="cpb" type="button" data-copy="'+MAIL+'">'+t("copy")+'</button></div>'+
+   '<div class="r">'+ic("phone")+'<span>'+PHONE+'</span><button class="cpb" type="button" data-copy="'+PHONE+'">'+t("copy")+'</button></div>'+
+   '<div class="r">'+ic("pin")+'<span>'+t("loum")+', '+t("cam")+'</span></div>'+
+   '<a class="btn wa sm" target="_blank" rel="noopener" href="https://wa.me/'+WA+'">'+ic("wa")+t("wam")+'</a></div>'+
+   '</div>';
+}
+function rFoot(){
+  $("#footin").innerHTML='<div class="fr"><a class="brand" href="#home" aria-label="Rohi"><svg viewBox="0 0 46 50" aria-hidden="true"><path d="M23 2l18 6v16c0 12-8 20-18 24C13 44 5 36 5 24V8z" fill="#fff"/><path d="M23 7l13 4.5V24c0 9-6 15-13 18C16 39 10 33 10 24V11.5z" fill="#087443"/><path d="M14 22l9-4 9 4-9 4z" fill="#fff"/><circle cx="23" cy="36" r="2.2" fill="#f3cf63"/></svg><span><b>ROHI</b><small>Bilingual Comprehensive High School<br>Loum</small></span></a>'+
+   '<div class="fn"><a href="#home">'+t("home")+'</a><a href="#about">'+t("about")+'</a><a href="#depts">'+t("depts")+'</a><a href="#campus">'+t("campuses")+'</a><a href="#apply">'+t("apply")+'</a><a href="#gallery">'+t("gallery")+'</a><a href="#contact">'+t("contact")+'</a></div>'+
+   '<div class="fs"><a href="tel:+'+WA+'" aria-label="'+(lang==="fr"?"Appeler l'école":"Call the school")+'" title="'+PHONE+'">'+ic("phone")+'</a><a target="_blank" rel="noopener" href="https://wa.me/'+WA+'" aria-label="WhatsApp">'+ic("wa")+'</a><span>'+ic("pin")+' '+t("loum")+' | '+t("cam")+'</span></div></div><div class="fc">'+t("rights")+'</div>';
+}
+
+/* ---------- department modal ---------- */
+function openDept(i){
+  var d=D[i];
+  var trades=d.id==="tec"?'<h4 style="margin-top:1.4rem">'+t("tr")+'</h4><div class="tg">'+TECH.map(function(x){return '<div class="tc"><span class="code">'+x[0]+'</span><h4>'+esc(x[1][lang])+'</h4><p>'+esc(x[2][lang])+'</p><small>'+t("car1")+": "+esc(x[3][lang])+'</small></div>';}).join("")+'</div>':"";
+  $("#dm").innerHTML='<div class="dm"><div class="scene">'+scene(d.id,d.n[lang])+'</div><div><h3>'+esc(d.n[lang])+'</h3><p class="lead">'+esc(d.tag[lang])+'</p>'+
+   '<h4>'+t("why1")+'</h4><ul>'+d.why[lang].map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+'</ul>'+
+   '<h4>'+t("off1")+'</h4><ul>'+d.off[lang].map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+'</ul>'+
+   '<h4>'+t("car1")+'</h4><div class="cr">'+d.car[lang].map(function(x){return "<span>"+esc(x)+"</span>";}).join("")+'</div></div></div>'+trades+
+   '<div class="cta"><button class="btn p" type="button" data-form="enrol">'+t("sfb")+ic("arrow")+'</button><button class="btn g" type="button" data-gopen="'+i+'">'+t("agd")+'</button></div>';
+  $("#dmodal").hidden=false;document.body.style.overflow="hidden";$("#dmodal").scrollTop=0;
+}
+
+
+var ADM={
+common:{en:["Original birth certificate + 2 photocopies","Last 2 years' report cards / school transcripts","Transfer or leaving certificate from the previous school","Certificate of the last class passed (FSLC / First School Leaving, BEPC or GCE O-Level, as applicable)","4 recent passport photographs (white background)","Photocopy of a parent or guardian's national ID card","Medical certificate and vaccination card","The printed copy of your online enrolment message"],fr:["Acte de naissance original + 2 photocopies","Bulletins des 2 dernières années","Certificat de transfert ou de radiation de l'école précédente","Diplôme de la dernière classe réussie (CEP, BEPC ou GCE O-Level, selon le cas)","4 photos d'identité récentes (fond blanc)","Photocopie de la carte d'identité d'un parent ou tuteur","Certificat médical et carnet de vaccination","La copie imprimée de votre message d'inscription en ligne"]},
+dep:{
+sci:{en:["Good results in Mathematics, Physics, Chemistry and Biology","Scientific calculator and geometry set","White laboratory coat","Notebooks for science practicals"],fr:["Bons résultats en Mathématiques, Physique, Chimie et Biologie","Calculatrice scientifique et matériel de géométrie","Blouse blanche de laboratoire","Cahiers pour les travaux pratiques"]},
+art:{en:["Report cards showing Literature, History, Geography and Languages","Dictionaries (English and French)","Notebooks and drawing materials for Fine Arts","A short writing sample (optional, bring if you have one)"],fr:["Bulletins avec Littérature, Histoire, Géographie et Langues","Dictionnaires (anglais et français)","Cahiers et matériel de dessin pour les Arts plastiques","Un court texte écrit (facultatif)"]},
+com:{en:["Report cards showing Mathematics and Economics, if studied","Calculator for Accounting","Ledger and accounting notebooks","Basic ICT skills are an advantage (not required)"],fr:["Bulletins avec Mathématiques et Économie, si étudiées","Calculatrice pour la Comptabilité","Cahiers de comptabilité","Des bases en informatique sont un atout (non obligatoire)"]},
+tec:{en:["Name of the trade you wish to study (e.g. Electrical, Welding, Fashion, ICT)","Overalls / workshop uniform and safety boots","Basic tool kit for your trade, if requested by the department","Technical drawing set and notebooks"],fr:["Nom du métier choisi (ex. Électricité, Soudure, Mode, Informatique)","Combinaison / tenue d'atelier et chaussures de sécurité","Trousse d'outils de base, si demandée par le département","Matériel de dessin technique et cahiers"]}},
+fees:{en:[["Registration fee","10,000 FCFA"],["Tuition (per term)","40,000 FCFA"],["PTA levy","5,000 FCFA"],["Uniform (set)","15,000 FCFA"]],fr:[["Frais d'inscription","10 000 FCFA"],["Scolarité (par trimestre)","40 000 FCFA"],["Cotisation APE","5 000 FCFA"],["Uniforme (ensemble)","15 000 FCFA"]]},
+dfee:{sci:["Laboratory fee","5,000 FCFA","Frais de laboratoire","5 000 FCFA"],art:["Fine Arts materials fee","3,000 FCFA","Frais de matériel d'arts plastiques","3 000 FCFA"],com:["Practical / ICT fee","4,000 FCFA","Frais de pratique / informatique","4 000 FCFA"],tec:["Workshop fee","10,000 FCFA","Frais d'atelier","10 000 FCFA"]}
+};
+
+ADM.entry={
+sci:{en:["Entry: Form 1 (after First School Leaving / CEP) or Lower Sixth Science (after GCE O-Level with passes in Maths and two sciences)","Classes: General Science stream, Forms 1 to Upper Sixth","Admission test: short Mathematics and Science assessment on the campus"],fr:["Entrée : 6e (après le CEP) ou Première C/D (après le BEPC avec de bonnes notes en maths et sciences)","Classes : filière scientifique, de la 6e à la Terminale","Test d'admission : court test de mathématiques et de sciences au campus"]},
+art:{en:["Entry: Form 1 or Lower Sixth Arts (after GCE O-Level with passes in English, Literature or History)","Classes: Arts and Humanities stream, Forms 1 to Upper Sixth","Admission test: short English / French language assessment on the campus"],fr:["Entrée : 6e ou Première A (après le BEPC avec de bonnes notes en langues, lettres ou histoire)","Classes : filière littéraire, de la 6e à la Terminale","Test d'admission : court test de langue anglaise / française au campus"]},
+com:{en:["Entry: Form 3 / Form 4 or Lower Sixth Commercial (after GCE O-Level, Maths and English passes preferred)","Classes: Accounting, Business Management, Economics and Office Practice","Admission test: short Mathematics and numeracy assessment on the campus"],fr:["Entrée : 4e / 3e ou Première G (après le BEPC, maths et langues appréciées)","Classes : Comptabilité, Gestion d'entreprise, Économie et Bureautique","Test d'admission : court test de mathématiques et de calcul au campus"]},
+tec:{en:["Entry: Form 1 (after First School Leaving / CEP) or Form 3 / Form 4 (after GCE O-Level or equivalent)","Classes: choose one trade from 11 technical options, with workshop practice every week","Interview: a short talk with the head of the trade to confirm your choice, on the campus"],fr:["Entrée : 6e (après le CEP) ou 4e / 3e (après le BEPC ou équivalent)","Classes : un métier à choisir parmi 11 options techniques, avec pratique d'atelier chaque semaine","Entretien : court échange avec le chef de métier pour confirmer votre choix, au campus"]}};
+ADM.dfees={
+sci:[["Laboratory fee","5,000 FCFA","Frais de laboratoire","5 000 FCFA"],["Practical materials","3,000 FCFA","Matériel de travaux pratiques","3 000 FCFA"]],
+art:[["Fine Arts materials fee","3,000 FCFA","Frais de matériel d'arts plastiques","3 000 FCFA"],["Library and language club","2,000 FCFA","Bibliothèque et club de langues","2 000 FCFA"]],
+com:[["Practical / ICT fee","4,000 FCFA","Frais de pratique / informatique","4 000 FCFA"],["Accounting materials","2,000 FCFA","Matériel de comptabilité","2 000 FCFA"]],
+tec:[["Workshop fee","10,000 FCFA","Frais d'atelier","10 000 FCFA"],["Workshop materials (per term)","6,000 FCFA","Matériaux d'atelier (par trimestre)","6 000 FCFA"]]};
+ADM.kit={
+ELEC:{en:"Overalls, insulated pliers, screwdriver set, tester",fr:"Combinaison, pince isolée, tournevis, testeur"},
+ELTN:{en:"Overalls, soldering iron, multimeter, small tools",fr:"Combinaison, fer à souder, multimètre, petit outillage"},
+MECH:{en:"Overalls, safety boots, gloves, spanner set",fr:"Combinaison, chaussures de sécurité, gants, clés"},
+CIVL:{en:"Overalls, safety boots, helmet, measuring tape, trowel",fr:"Combinaison, chaussures de sécurité, casque, mètre, truelle"},
+CARP:{en:"Overalls, safety boots, hammer, measuring tape, goggles",fr:"Combinaison, chaussures de sécurité, marteau, mètre, lunettes"},
+PLMB:{en:"Overalls, safety boots, gloves, pipe wrench",fr:"Combinaison, chaussures de sécurité, gants, clé à tube"},
+WELD:{en:"Overalls, safety boots, welding gloves and mask",fr:"Combinaison, chaussures de sécurité, gants et masque de soudeur"},
+AUTO:{en:"Overalls, safety boots, gloves, spanner set",fr:"Combinaison, chaussures de sécurité, gants, clés"},
+COOL:{en:"Overalls, safety boots, gloves, goggles",fr:"Combinaison, chaussures de sécurité, gants, lunettes"},
+FASH:{en:"Tape measure, scissors, needles and thread, notebook",fr:"Mètre ruban, ciseaux, aiguilles et fil, cahier"},
+ICT:{en:"Flash drive, notebook, headphones (optional)",fr:"Clé USB, cahier, écouteurs (facultatif)"}};
+var curGuide=0;
+function openGuide(i){
+  curGuide=i;var fr=lang==="fr";var d=D[i];
+  var tabs='<div class="tabs" role="tablist">'+D.map(function(x,k){return '<button class="tab" type="button" role="tab" data-gtab="'+k+'" aria-selected="'+(k===i)+'">'+esc(x.n[lang])+'</button>';}).join("")+'</div>';
+  var li=function(a){return a.map(function(x){return '<li>'+esc(x)+'</li>';}).join("");};
+  var rows=ADM.fees[lang].concat(ADM.dfees[d.id].map(function(df){return [fr?df[2]:df[0],fr?df[3]:df[1]];}));
+  var fee='<table class="fee">'+rows.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td></tr>';}).join("")+'</table>';
+  $("#am").innerHTML=tabs+'<h3 class="gh3">'+t("agd")+' · '+esc(d.n[lang])+'</h3>'+
+   '<div class="gnote"><strong>'+(fr?"Inscription en ligne, paiement au campus.":"Enrol online, pay at the campus.")+'</strong> '+(fr?"Aucun paiement n'est effectué en ligne. Tous les frais se règlent à l'administration du campus (Loum ou Tombel) lors de votre visite.":"No payment is made online. All fees are paid at the campus administration (Loum or Tombel) when you visit.")+'</div>'+
+   '<div class="gentry"><h4>'+(fr?"Conditions d'entrée · ":"Entry details · ")+esc(d.n[lang])+'</h4><ul class="gl">'+li(ADM.entry[d.id][lang])+'</ul></div>'+
+   '<div class="gcols"><div><h4>'+(fr?"À apporter au campus":"What to bring to the campus")+'</h4><ul class="gl">'+li(ADM.common[lang])+'</ul>'+
+   '<h4>'+(fr?"Spécifique à ":"For ")+esc(d.n[lang])+'</h4><ul class="gl">'+li(ADM.dep[d.id][lang])+'</ul></div>'+
+   '<div><h4>'+(fr?"Frais (à payer au campus)":"Fees (paid at the campus)")+'</h4>'+fee+'<p class="gsm">'+(fr?"Les montants sont indicatifs et seront confirmés par l'administration.":"Amounts are indicative and will be confirmed by the administration.")+'</p></div></div>'+
+   (d.id==="tec"?'<h4 class="gtr">'+(fr?"À apporter selon le métier":"What to bring for each trade")+'</h4><div class="gtg">'+TECH.map(function(x){return '<div class="gt1"><b>'+esc(x[1][lang])+'</b><span>'+esc((ADM.kit[x[0]]||{en:"",fr:""})[lang])+'</span></div>';}).join("")+'</div>':"")+
+   '<div class="cta"><button class="btn p" type="button" data-form="enrol">'+t("sfb")+ic("arrow")+'</button></div>';
+  $("#dmodal").hidden=true;$("#fmodal").hidden=true;$("#amodal").hidden=false;document.body.style.overflow="hidden";$("#amodal").scrollTop=0;
+}
+
+/* ---------- forms ---------- */
+var CLASSES={en:["Form 1","Form 2","Form 3","Form 4","Form 5","Lower Sixth","Upper Sixth"],fr:["6ème","5ème","4ème","3ème","2nde","1ère","Terminale"]};
+function DEPTN(){return D.map(function(d){return d.n[lang];});}
+function CAMPN(){return CAMP.map(function(c){return c.short[lang];});}
+function F(){
+  var fr=lang==="fr";
+  if(mode==="enrol") return [
+   ["s_name","text",fr?"Nom complet de l'élève":"Student's full name",1],
+   ["s_dob","date",fr?"Date de naissance":"Date of birth",1],
+   ["s_sex","select",fr?"Sexe":"Gender",1,fr?["Fille","Garçon"]:["Girl","Boy"]],
+   ["s_class","select",fr?"Classe demandée":"Class applying for",1,CLASSES[lang]],
+   ["s_dept","select",fr?"Département":"Department",1,DEPTN().concat(fr?["Pas encore sûr"]:["Not sure yet"])],
+   ["s_camp","select","Campus",1,CAMPN()],
+   ["s_prev","text",fr?"École précédente":"Previous school",0],
+   ["s_lang","select",fr?"Section":"Language section",1,["English","Français"]],
+   ["p_name","text",fr?"Nom du parent / tuteur":"Parent or guardian name",1],
+   ["p_phone","tel",fr?"Téléphone du parent (WhatsApp)":"Parent phone (WhatsApp)",1],
+   ["p_mail","email",fr?"E-mail du parent":"Parent email",0],
+   ["p_town","text",fr?"Ville / quartier":"Town / neighbourhood",0],
+   ["note","textarea",fr?"Message (facultatif)":"Message (optional)",0]];
+  return [
+   ["t_name","text",fr?"Nom complet":"Full name",1],
+   ["t_phone","tel",fr?"Téléphone (WhatsApp)":"Phone (WhatsApp)",1],
+   ["t_mail","email","Email",1],
+   ["t_sub","text",fr?"Matière ou métier à enseigner":"Subject or trade to teach",1],
+   ["t_dept","select",fr?"Département":"Department",1,DEPTN()],
+   ["t_qual","select",fr?"Diplôme le plus élevé":"Highest qualification",1,fr?["BAC","BTS / DUT","Licence","Master","DIPES / DIPET","Autre"]:["GCE A Level / BAC","HND / BTS","Bachelor's degree","Master's degree","DIPES / DIPET","Other"]],
+   ["t_exp","select",fr?"Années d'expérience":"Years of experience",1,fr?["Débutant","1 à 2 ans","3 à 5 ans","6 à 10 ans","Plus de 10 ans"]:["Fresh graduate","1-2 years","3-5 years","6-10 years","Over 10 years"]],
+   ["t_camp","select",fr?"Campus préféré":"Preferred campus",1,CAMPN().concat(fr?["Les deux"]:["Either"])],
+   ["t_lang","select",fr?"Langue d'enseignement":"Teaching language",1,fr?["Anglais","Français","Les deux"]:["English","French","Both"]],
+   ["t_start","text",fr?"Date de début possible":"Earliest start date",0],
+   ["note","textarea",fr?"Présentez-vous en quelques lignes":"Tell us about yourself in a few lines",0]];
+}
+function rForm(){
+  var fr=lang==="fr";
+  $("#fields").innerHTML=F().map(function(f){
+    var id="f_"+f[0], req=f[3]?" required":"", full=(f[1]==="textarea")?" full":"", ctl;
+    if(f[1]==="select") ctl='<select id="'+id+'" name="'+f[0]+'"'+req+'>'+f[4].map(function(o){return "<option>"+esc(o)+"</option>";}).join("")+'</select>';
+    else if(f[1]==="textarea") ctl='<textarea id="'+id+'" name="'+f[0]+'"></textarea>';
+    else ctl='<input id="'+id+'" name="'+f[0]+'" type="'+f[1]+'"'+req+(f[1]==="tel"?' inputmode="tel" placeholder="+237 ..."':"")+'>';
+    return '<div class="fld'+full+'"><label for="'+id+'">'+esc(f[2])+(f[3]?" *":"")+'</label>'+ctl+'</div>';
+  }).join("");
+  $("#sub").textContent=mode==="enrol"?(fr?"Préparer l'inscription":"Prepare enrolment"):(fr?"Préparer la candidature":"Prepare application");
+  $("#tb-enrol").textContent=t("tit");$("#tb-teach").textContent=t("tit2");
+  $("#tb-enrol").setAttribute("aria-selected",mode==="enrol");$("#tb-teach").setAttribute("aria-selected",mode==="teach");
+  $("#out").innerHTML="";
+}
+function openForm(m){
+  $("#amodal").hidden=true;
+  $("#dmodal").hidden=true;
+  mode=m;rForm();$("#fmodal").hidden=false;document.body.style.overflow="hidden";$("#fmodal").scrollTop=0;
+  var f=$("#fields input");if(f)f.focus({preventScroll:true});
+}
+function closeAll(){$("#amodal").hidden=true;$("#fmodal").hidden=true;$("#dmodal").hidden=true;$("#lmodal").hidden=true;document.body.style.overflow="";}
+function submitForm(ev){
+  ev.preventDefault();
+  var form=$("#form"), fr=lang==="fr";
+  if(!form.checkValidity()){form.reportValidity();return;}
+  var title=mode==="enrol"?(fr?"NOUVELLE INSCRIPTION - Rohi":"NEW STUDENT ENROLMENT - Rohi"):(fr?"CANDIDATURE ENSEIGNANT - Rohi":"TEACHING APPLICATION - Rohi");
+  var lines=[title,""];
+  F().forEach(function(f){var el=$("#f_"+f[0]);var v=(el.value||"").trim();if(v) lines.push(f[2]+": "+v);});
+  lines.push("","Rohi Bilingual Comprehensive High School - Loum / Tombel");
+  var msg=lines.join("\n");
+  var wa="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+  var mail="mailto:"+MAIL+"?subject="+encodeURIComponent(title)+"&body="+encodeURIComponent(msg);
+  $("#out").innerHTML='<div class="res"><strong>'+(fr?"Votre dossier est prêt. Dernière étape : l'envoyer.":"Your form is ready. Last step: send it.")+'</strong>'+
+   '<textarea id="msg" readonly>'+esc(msg)+'</textarea>'+
+   '<div class="cta" style="margin:0"><a class="btn p" target="_blank" rel="noopener" href="'+wa+'">'+(fr?"Envoyer sur WhatsApp":"Send on WhatsApp")+'</a>'+
+   '<button type="button" class="btn g" id="cpy">'+(fr?"Copier le message":"Copy message")+'</button>'+
+   '<a class="btn g" href="'+mail+'">'+(fr?"Ouvrir l'e-mail":"Open email")+'</a></div>'+
+   '<p class="note">'+(fr?"Le dossier est envoyé quand vous appuyez sur Envoyer dans WhatsApp. Pour l'e-mail, écrivez à ":"The form is delivered when you tap Send in WhatsApp. For email, write to ")+'<strong>'+MAIL+'</strong>'+(fr?" et collez le message copié si le bouton ne s'ouvre pas.":" and paste the copied message if the button does not open.")+'</p></div>';
+  $("#cpy").addEventListener("click",function(){var b=this;try{navigator.clipboard.writeText(msg).then(function(){b.textContent="✓";},function(){$("#msg").select();});}catch(e){$("#msg").select();}});
+  $("#out").scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+/* ---------- events ---------- */
+function renderAll(){
+  document.documentElement.lang=lang;
+  rHeader();rHero();rAbout();rDepts();rWhy();rCampus();rGallery();rApply();rFoot();rForm();observe();
+}
+document.addEventListener("click",function(e){
+  var el;
+  if(e.target.closest("a[target=_blank]")) return;
+  if((el=e.target.closest("[data-lb]"))){var x=window.__PH[+el.getAttribute("data-lb")];$("#lbimg").src=x[0];$("#lbimg").alt=x[1][lang];$("#lbcap").textContent=x[1][lang];$("#lmodal").hidden=false;document.body.style.overflow="hidden";return;}
+  if((el=e.target.closest("[data-gopen]"))){openGuide(+el.getAttribute("data-gopen"));return;}
+  if((el=e.target.closest("[data-gtab]"))){openGuide(+el.getAttribute("data-gtab"));return;}
+  if((el=e.target.closest("[data-guide]"))){e.preventDefault();$("#nav").classList.remove("open");openGuide(curGuide);return;}
+  if((el=e.target.closest("[data-dept]"))){e.preventDefault();$("#nav").classList.remove("open");openDept(+el.getAttribute("data-dept"));return;}
+  if((el=e.target.closest("[data-form]"))){e.preventDefault();$("#nav").classList.remove("open");openForm(el.getAttribute("data-form"));return;}
+  if((el=e.target.closest("[data-camp]"))){curCamp=+el.getAttribute("data-camp");rCampus();if(el.tagName==="A"){$("#nav").classList.remove("open");}return;}
+  if((el=e.target.closest("[data-copy]"))){var v=el.getAttribute("data-copy"),b=el;try{navigator.clipboard.writeText(v).then(function(){b.textContent="✓";setTimeout(function(){b.textContent=t("copy");},1200);},function(){});}catch(x){}return;}
+  if(e.target.closest("[data-close]")||e.target.classList.contains("modal")){closeAll();return;}
+  if(e.target.closest("#gmore")){galOpen=!galOpen;rGallery();return;}
+  if(e.target.closest("#more")){story=!story;$("#tlw").hidden=!story;$("#more").innerHTML=t(story?"less":"more")+ic("arrow");return;}
+  if(e.target.closest("#story-btn")){story=true;rAbout();return;}
+  if((el=e.target.closest(".dd>button"))){var dd=el.parentNode;var was=dd.classList.contains("open");document.querySelectorAll(".dd").forEach(function(x){x.classList.remove("open");});if(!was)dd.classList.add("open");return;}
+  if(e.target.closest("#lang")){lang=lang==="en"?"fr":"en";try{localStorage.setItem("rohi-lang",lang);}catch(x){}renderAll();return;}
+  if(e.target.closest("nav a[href]")){$("#nav").classList.remove("open");$("#burger").setAttribute("aria-expanded","false");}
+  if(!e.target.closest(".dd")) document.querySelectorAll(".dd").forEach(function(x){x.classList.remove("open");});
+});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeAll();});
+$("#burger").addEventListener("click",function(){var o=$("#nav").classList.toggle("open");this.setAttribute("aria-expanded",o);});
+$("#tb-enrol").addEventListener("click",function(){mode="enrol";rForm();});
+$("#tb-teach").addEventListener("click",function(){mode="teach";rForm();});
+$("#form").addEventListener("submit",submitForm);
+
+var topb=$("#top");
+function onScroll(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;$("#prog").style.width=(max>0?(h.scrollTop/max*100):0)+"%";topb.classList.toggle("show",h.scrollTop>600);}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+topb.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
+var io=null;
+function observe(){
+  if(!("IntersectionObserver" in window)) return;
+  if(!io) io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});},{threshold:.08});
+  document.querySelectorAll(".rv:not(.in)").forEach(function(el){io.observe(el);});
+}
+if("IntersectionObserver" in window){
+  var so=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var id=en.target.id;document.querySelectorAll("nav>a[href]").forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+(id==="why"?"depts":id));});}});},{rootMargin:"-45% 0px -50% 0px"});
+  ["home","about","depts","campus","gallery","apply","contact"].forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s);});
+}
+renderAll();
+})();
+</script>
+
+</body>
+</html>
